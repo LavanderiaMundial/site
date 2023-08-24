@@ -1,4 +1,5 @@
 
+import BackToTop from './components/BackToTop'
 import NavBar from './components/NavBar'
 import Footer from './components/footer'
 import './globals.css'
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
 
       <body className={`${montserrat.variable} ${lobster.variable} w-full min-h-screen z-10`}>
         <NavBar />
+        <BackToTop/>
         {children}
         <Footer/>
       </body>

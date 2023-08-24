@@ -8,7 +8,7 @@ const ano = data.getFullYear()
 export default function Footer() {
     return (
         <div className="mt-10 flex flex-col justify-center items-center">
-            <Image src={logo} alt="logo da lavanderia Mundial" width={500}/>
+            <Image src={logo} alt="logo da lavanderia Mundial" width={300}/>
             <div className=" py-5 text-text flex flex-col items-center justify-center text-center">
                 <p className="text-xs px-5">
                     Lavanderia Mundial - CNPJ: 0000000000000000000000000 Todos os Direitos Reservados, {ano}

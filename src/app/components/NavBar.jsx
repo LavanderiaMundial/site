@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
 import logo from "../../../public/logo-principal.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -26,10 +26,28 @@ export default function NavBar() {
         <div>
             <div className="fixed z-50 backdrop-blur-lg bg-white/50 w-screen flex justify-between px-16 items-end pb-5 space-x-10">
                 <Image src={logo} alt="logo da empresa" className=" w-48" />
-                <div className="space-x-8 flex ">
-                    <CustomLink href="#inicio" title="Inicio" />
+                <div className="space-x-8 flex">
+                   
                     <CustomLink href="#servicos" title="Serviços" />
-                    <CustomLink href="#formadelimpeza" title="Formas de Limpeza" />
+                    <div className="group relative cursor-pointer">
+                        <h2 className="text-primary font-bold uppercase">
+                            Onde Atuamos
+                            <FontAwesomeIcon icon={faCaretDown} className="ml-2 animate-bounce" />
+                        </h2>
+                        <div className="opacity-0 group-hover:opacity-100 -bottom-14 space-y-2 absolute transition-all duration-300">
+                            <CustomLink
+                                href="#residencial"
+                                title="Residencial"
+                                className="!text-light"
+                            />
+                            <CustomLink
+                                href="#comercial"
+                                title="Comercial"
+                                className="!text-light hover:text-zinc-600"
+                            />
+                        </div>
+                    </div>
+                    <CustomLink href="#perguntas" title="Perguntas frequentes" />
                     <CustomLink href="#contato" title="Contato" />
                 </div>
             </div>

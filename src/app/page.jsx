@@ -9,7 +9,7 @@ import sofafeliz from "../../public/sofafeliz.jpg"
 import mocoComercial from "../../public/mocoComercial.jpg"
 import image from "../../public/sofafeliz.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBed, faChair, faCircleExclamation, faCouch, faFaceSmile, faHome, faLeaf, faMicrochip, faPersonBurst, faRug, faSearch, faSoap, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
+import { faBed, faCaretDown, faCaretSquareDown, faChair, faCircleExclamation, faCouch, faFaceSmile, faHome, faLeaf, faMicrochip, faPersonBurst, faRug, faSearch, faSoap, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
@@ -285,7 +285,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      <div id="formadelimpeza" className="p-16 pt-24">
+      <div id="residencial" className="p-16 pt-24">
         <h2 className="font-bold text-2xl text-black/90">COMO LIMPAMOS ESTOFADOS</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
         <div className="flex justify-center gap-5">
@@ -315,7 +315,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-16">
+      <div id="comercial" className="p-16 pt-24">
         <h2 className="font-bold text-2xl text-black/90">LIMPEZA COMERCIAL DE ESTOFADOS</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
         <div className="flex justify-center gap-5">
@@ -337,6 +337,23 @@ export default function Home() {
             <p className="text-black/75">
               Você também tem a opção de complementar qualquer um desses serviços para manter seu estofamento limpo por mais tempo: tratamento local, desodorante eprotetor.
             </p><br />
+          </div>
+        </div>
+      </div>
+      <div id="perguntas" className="p-16 pt-24">
+        <h2 className="font-bold text-2xl text-black/90">
+          Perguntas frequentes
+        </h2>
+        <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
+        <div className="mt-5">
+          <div className="flex flex-col justify-between items-center w-full bg-slate-100 p-3 group">
+            <div className="flex justify-between w-full">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis beatae officia iste?</h2>
+              <FontAwesomeIcon icon={faCaretSquareDown} className="ml-2 text-primary h-10 justify-end" />
+            </div>
+            <div className=" hidden opacity-0 group-hover:opacity-100 group-hover:block transition-all duration-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error impedit optio saepe ad quam rem totam quia eligendi. Labore et nostrum quis molestiae repellat qui ex earum minima totam.
+            </div>
           </div>
         </div>
       </div>
