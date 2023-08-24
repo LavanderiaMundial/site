@@ -7,7 +7,7 @@ import logo from "../../../public/logo-principal.png"
 
 const CustomLink = ({ href, title, className = "" }) => {
     return (
-        <a href={href} className={`${className} group relative z-10   font-bold  w-auto px-2 text-center justify-center items-center flex hover:text-light transition-all duration-300 text-primary`}>
+        <a href={href} className={`${className} group relative z-10   font-bold  w-auto px-2 text-center justify-center items-center flex hover:text-light transition-all duration-300 text-primary uppercase`}>
             {title}
             <span
                 className={`-z-20 h-0 w-full inline-block rounded absolute left-0 -bottom-0.5  group-hover:h-7 transition-[height] ease duration-300 
@@ -31,8 +31,6 @@ export default function NavBar() {
                     <CustomLink href="#servicos" title="Serviços" />
                     <CustomLink href="#formadelimpeza" title="Formas de Limpeza" />
                     <CustomLink href="#contato" title="Contato" />
-                    <CustomLink href="#" title="Lorem" />
-                    <CustomLink href="#" title="Lorem" />
                 </div>
             </div>
         </div>

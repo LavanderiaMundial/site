@@ -1,5 +1,6 @@
 
 import NavBar from './components/NavBar'
+import Footer from './components/footer'
 import './globals.css'
 import { Montserrat, Lobster } from 'next/font/google'
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.variable} ${lobster.variable} w-full min-h-screen z-10`}>
         <NavBar />
         {children}
+        <Footer/>
       </body>
     </html>
   )

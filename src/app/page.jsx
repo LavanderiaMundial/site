@@ -39,10 +39,9 @@ export default function Home() {
   const [activeDiv, setActiveDiv] = useState(0);
 
   return (
-    <div id="inicio" className="relative pt-24">
-      <div className="w-screen h-[500px]">
-
-        <Image src={mocolavanderia} className="absolute h-[500px] w-screen" />
+    <div id="inicio" className=" pt-24">
+      <div className="w-screen ">
+        <Image src={mocolavanderia} className="w-screen" />
       </div>
 
       <div className="flex h-[600px]">
@@ -341,20 +340,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="contato" className="mt-24 px-16">
+      <div id="contato" className="pt-24 px-16">
         <h2 className="font-bold text-2xl text-black/90">Onde Estamos</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
-        <p className="mt-5">
-          Venha nos fazer uma visita! Se preferir, nos envie uma mensagem pelo Whatsapp.
-        </p>
+
         <div className="mt-10 rounded-xl flex bg-gradient-to-t from-primary to-secondary">
           <div className="w-1/2 rounded-xl">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-xl drop-shadow-drop1 w-full h-[500px]">
             </iframe>
           </div>
           <div className="w-1/2 flex flex-col justify-center items-center gap-5 ">
-            <div className="w-96 flex flex-col justify-center items-center text-center gap-5">
-              <h2><span className="text-light font-bold">Endereço:</span>R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
+            <div className=" flex flex-col justify-center items-center text-center gap-5">
+              <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
               <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
               <div className="space-x-5">
                 <Link href="#" target="_blank" className="">
