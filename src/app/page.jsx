@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import mocolavanderia from "../../public/mocomundial.jpeg"
 import sofafeliz from "../../public/sofafeliz.jpg"
@@ -5,12 +6,13 @@ import image from "../../public/sofafeliz.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { useState } from "react";
 
 const Itens = ({ title, icon, text }) => {
   return (
     <div className="flex mt-5">
       <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary">
-        <FontAwesomeIcon icon={icon} className="text-light h-14 flex justify-center items-center p-3 drop-shadow-dark2" />
+        <FontAwesomeIcon icon={icon} className="text-light h-8 flex justify-center items-center p-3 drop-shadow-dark2" />
       </div>
       <div className="flex flex-col w-[428px]">
         <p className="text-lg font-bold px-5">{title}</p>
@@ -21,9 +23,10 @@ const Itens = ({ title, icon, text }) => {
   )
 }
 
-
-
 export default function Home() {
+
+  const [activeDiv, setActiveDiv] = useState(0);
+
   return (
     <div className="relative pt-24">
       <div className="w-screen h-[500px]">
@@ -65,46 +68,164 @@ export default function Home() {
         </div>
       </div>
       <div className=" px-16 w-screen">
-        <nav className="flex justify-center items-center">
 
-          <button className="w-[203px] px-10 py-4 bg-zinc-300 hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300">
+        <nav className="flex justify-center items-center">
+          <button className={`w-[203px] px-10 py-4 ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            onClick={() => setActiveDiv(0)}>
             Lorem
           </button>
-          <button className="w-[203px] px-10 py-4 bg-zinc-300 hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300">
+          <button className={`w-[203px] px-10 py-4 ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            onClick={() => setActiveDiv(1)}>
             Lorem
           </button>
-          <button className="w-[203px] px-10 py-4 bg-zinc-300 hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300">
+          <button className={`w-[203px] px-10 py-4 ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            onClick={() => setActiveDiv(2)}>
             Lorem
           </button>
-          <button className="w-[203px] px-10 py-4 bg-zinc-300 hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300">
+          <button className={`w-[203px] px-10 py-4 ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            onClick={() => setActiveDiv(3)}>
             Lorem
           </button>
-          <button className="w-[203px] px-10 py-4 bg-zinc-300 hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300">
+          <button className={`w-[203px] px-10 py-4 ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            onClick={() => setActiveDiv(4)}>
             Lorem
           </button>
+
         </nav>
-        <div className="mt-8 flex">
-          <div className="w-1/2 h-96 mr-20 flex justify-end">
-            <Image src={image} alt="image" width={400} />
+        {activeDiv === 0 && (
+          <div className="mt-8 flex">
+            <div className="w-1/2 h-96 mr-20 flex justify-end">
+              <Image src={image} alt="image" width={400} />
+            </div>
+            <div className="w-1/2">
+              <Itens
+                icon={faSearch}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+              <Itens
+                icon={faLeaf}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+              <Itens
+                icon={faClock}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+            </div>
           </div>
-          <div className="w-1/2">
-            <Itens
-              icon={faSearch}
-              title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-            />
-            <Itens
-              icon={faLeaf}
-              title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-            />
-            <Itens
-              icon={faClock}
-              title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-            />
+        )}
+
+
+        {activeDiv === 1 && (
+          <div className="mt-8 flex">
+            <div className="w-1/2 h-96 mr-20 flex justify-end">
+              <Image src={image} alt="image" width={400} />
+            </div>
+            <div className="w-1/2">
+              <Itens
+                icon={faSearch}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+                
+              />
+              <Itens
+                icon={faLeaf}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+              <Itens
+                icon={faClock}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+            </div>
           </div>
-        </div>
+        )}
+        {activeDiv === 2 && (
+          <div className="mt-8 flex">
+            <div className="w-1/2 h-96 mr-20 flex justify-end">
+              <Image src={image} alt="image" width={400} />
+            </div>
+            <div className="w-1/2">
+              <Itens
+                icon={faSearch}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+                
+              />
+              <Itens
+                icon={faLeaf}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+              <Itens
+                icon={faClock}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+            </div>
+          </div>
+        )}
+        {activeDiv === 3 && (
+          <div className="mt-8 flex">
+            <div className="w-1/2 h-96 mr-20 flex justify-end">
+              <Image src={image} alt="image" width={400} />
+            </div>
+            <div className="w-1/2">
+              <Itens
+                icon={faSearch}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+                
+              />
+              <Itens
+                icon={faLeaf}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+              <Itens
+                icon={faClock}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+            </div>
+          </div>
+        )}
+        {activeDiv === 4 && (
+          <div className="mt-8 flex">
+            <div className="w-1/2 h-96 mr-20 flex justify-end">
+              <Image src={image} alt="image" width={400} />
+            </div>
+            <div className="w-1/2">
+              <Itens
+                icon={faSearch}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+                
+              />
+              <Itens
+                icon={faLeaf}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+              <Itens
+                icon={faClock}
+                title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
+              />
+            </div>
+          </div>
+        )}
+
+
+
       </div>
     </div>
   )
