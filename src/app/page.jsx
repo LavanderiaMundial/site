@@ -9,7 +9,9 @@ import { faClock } from "@fortawesome/free-regular-svg-icons";
 const Itens = ({ title, icon, text }) => {
   return (
     <div className="flex mt-5">
-      <FontAwesomeIcon icon={icon} className="gradient-container bg-gradient-to-t from-primary to-secondary text-light h-14 rounded-full flex justify-center items-center p-3" />
+      <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary">
+        <FontAwesomeIcon icon={icon} className="text-light h-14 flex justify-center items-center p-3 drop-shadow-dark2" />
+      </div>
       <div className="flex flex-col w-[428px]">
         <p className="text-lg font-bold px-5">{title}</p>
         <p className="p-5 px text-blac/75">{text}</p>
@@ -82,9 +84,9 @@ export default function Home() {
           </button>
         </nav>
         <div className="mt-8 flex">
-          <div className="w-1/2">
-            <Image src={image} alt="image" width={400}/>
-            </div>
+          <div className="w-1/2 h-96 mr-20 flex justify-end">
+            <Image src={image} alt="image" width={400} />
+          </div>
           <div className="w-1/2">
             <Itens
               icon={faSearch}
