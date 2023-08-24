@@ -11,7 +11,8 @@ module.exports = {
         light: "#fff",
         primary: "#1C74BB", // 240,86,199
         secondary:"#30BDF2", // 80,230,21
-        tertiary:"#2288CB"
+        tertiary:"#2288CB",
+        amarelo:"#FFAF00",
       },
       dropShadow: {
         dark1: '2px 2px 0px black',
