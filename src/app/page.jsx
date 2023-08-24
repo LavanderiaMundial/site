@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import mocolavanderia from "../../public/mocomundial.jpeg"
+import moco2mundial from "../../public/moco2mundial.jpg"
 import sofafeliz from "../../public/sofafeliz.jpg"
 import image from "../../public/sofafeliz.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,7 +37,7 @@ export default function Home() {
 
       <div className="flex h-[600px]">
         <div className="w-1/2 pl-16">
-          <h2 className="text-2xl text-black/75 w-96 py-5 font-bold">
+          <h2 className="text-2xl text-black/90 w-96 py-5 font-bold">
             LIMPEZA DE MÓVEIS E ESTOFADOS
             <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
           </h2>
@@ -71,7 +72,7 @@ export default function Home() {
 
         <nav className="flex justify-center items-center">
           <button className={`w-[203px] px-10 py-4 ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-s-full`}
             onClick={() => setActiveDiv(0)}>
             Lorem
           </button>
@@ -91,7 +92,7 @@ export default function Home() {
             Lorem
           </button>
           <button className={`w-[203px] px-10 py-4 ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-e-full`}
             onClick={() => setActiveDiv(4)}>
             Lorem
           </button>
@@ -133,7 +134,7 @@ export default function Home() {
                 icon={faSearch}
                 title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-                
+
               />
               <Itens
                 icon={faLeaf}
@@ -158,7 +159,7 @@ export default function Home() {
                 icon={faSearch}
                 title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-                
+
               />
               <Itens
                 icon={faLeaf}
@@ -183,7 +184,7 @@ export default function Home() {
                 icon={faSearch}
                 title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-                
+
               />
               <Itens
                 icon={faLeaf}
@@ -208,7 +209,7 @@ export default function Home() {
                 icon={faSearch}
                 title=" Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae hic inventore error laudantium officiis quo velit. Voluptates molestiae eos maiores architecto?"
-                
+
               />
               <Itens
                 icon={faLeaf}
@@ -223,8 +224,35 @@ export default function Home() {
             </div>
           </div>
         )}
-
-
+      </div>
+      <div className="p-16">
+        <h2 className="font-bold text-2xl text-black/90">COMO LIMPAMOS ESTOFADOS</h2>
+        <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
+        <div className="flex justify-center gap-5">
+          <div className="mt-5 w-1/2">
+            <p className="text-black/75">
+              1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
+            </p><br />
+            <p className="text-black/75">
+              2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
+            </p><br />
+            <p className="text-black/75">
+              3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
+            </p><br />
+            <p className="text-black/75">
+              4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
+            </p><br />
+            <p className="text-black/75">
+              5. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
+            </p><br />
+            <p className="text-black/75">
+              6. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
+            </p><br />
+          </div>
+          <div className="w-1/2">
+            <Image src={moco2mundial} alt="imagem da limpeza de um estofado lavanderia mundial" className="rounded-xl"/>
+          </div>
+        </div>
 
       </div>
     </div>
