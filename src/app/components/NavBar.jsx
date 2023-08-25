@@ -32,7 +32,7 @@ export default function NavBar() {
                     <div className="group relative cursor-pointer">
                         <h2 className="text-primary font-bold uppercase">
                             Onde Atuamos
-                            <FontAwesomeIcon icon={faCaretDown} className="ml-2 animate-bounce" />
+                            <FontAwesomeIcon icon={faCaretDown} className="ml-2 animate-bounce w-4" />
                         </h2>
                         <div className="opacity-0 group-hover:opacity-100 -bottom-14 space-y-2 absolute transition-all duration-300">
                             <CustomLink

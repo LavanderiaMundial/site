@@ -9,10 +9,12 @@ import sofafeliz from "../../public/sofafeliz.jpg"
 import mocoComercial from "../../public/mocoComercial.jpg"
 import image from "../../public/sofafeliz.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBed, faCaretDown, faCaretSquareDown, faChair, faCircleExclamation, faCouch, faFaceSmile, faHome, faLeaf, faMicrochip, faPersonBurst, faRug, faSearch, faSoap, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
+import { faBed, faCaretSquareDown, faChair, faCircleExclamation, faCouch, faFaceSmile, faHome, faLeaf, faMicrochip, faPersonBurst, faRug, faSearch, faSoap, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import { motion } from "framer-motion"
+
 
 const Itens = ({ title, icon, text, text1 }) => {
   return (
@@ -47,7 +49,7 @@ const Perguntas = ({ pergunta, resposta }) => {
     <div className="mt-5">
       <div className="flex flex-col justify-between items-center w-full bg-slate-100 p-3 group rounded-xl">
         <div
-          className="flex justify-between items-center w-full cursor-pointer"
+          className="flex justify-between items-center w-full cursor-pointer py-5"
           onClick={toggleOpen}
         >
           <h2>{pergunta}</h2>
@@ -56,9 +58,10 @@ const Perguntas = ({ pergunta, resposta }) => {
             className={`ml-2 text-primary h-10 ${isOpen ? 'rotate-180' : ''
               } cursor-pointer`}
           />
+
         </div>
         <div
-          className={`overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          className={`overflow-hidden ${isOpen ? 'max-h-96 opacity-100 bg-primary p-2 text-light rounded-xl' : 'max-h-0 opacity-0'
             } transition-all duration-300 `}
         >
           {resposta}
@@ -188,7 +191,7 @@ export default function Home() {
           </button>
         </nav>
         {activeDiv === 0 && (
-          <div className="mt-8 flex">
+          <div className={`mt-8 flex`}>
             <div className="w-1/2 h-96 mr-20 flex justify-end">
               <Image src={lavagemEstofado} alt="image" width={400} className="rounded-xl" />
             </div>
@@ -197,7 +200,6 @@ export default function Home() {
                 icon={faCouch}
                 title=" Lavagem de Sofás."
                 text="A lavagem de estofados em um ambiente familiar é muito importante manter a saúde e a disposição das pessoas que ali convivem. Não raro, a limpeza incorreta em sofás, almofadas, acaba por incidir no aumento de casos de doenças respiratórias como: rinites, sinusites, resfriados e bronquite, entre outras, que têm o processo alérgico potencializado devido ao acúmulo de fungos, bactérias e ácaros nos revestimentos."
-                text1=" "
               />
               <Itens
                 icon={faMicrochip}
@@ -421,13 +423,18 @@ export default function Home() {
         <h2 className="font-bold text-2xl text-black/90">Onde Estamos</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
 
-        <div className="mt-10 rounded-xl flex bg-gradient-to-t from-primary to-secondary">
+        <div
+          className="mt-10 rounded-xl flex ">
           <div className="w-1/2 rounded-xl">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-xl drop-shadow-drop1 w-full h-[500px]">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-s-xl drop-shadow-drop1 w-full h-[500px] ">
             </iframe>
           </div>
           <div className="w-1/2 flex flex-col justify-center items-center gap-5 ">
-            <div className=" flex flex-col justify-center items-center text-center gap-5">
+            <motion.div
+              initial={{ x: -500 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1 }}
+              className=" -z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-full">
               <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
               <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
               <div className="space-x-5">
@@ -441,10 +448,10 @@ export default function Home() {
                   <FontAwesomeIcon icon={faWhatsapp} className="text-light h-10" />
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
