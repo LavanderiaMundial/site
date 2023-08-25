@@ -22,7 +22,7 @@ const Itens = ({ title, icon, text, text1 }) => {
       <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary mr-1">
         <FontAwesomeIcon icon={icon} className="text-light h-8 flex justify-center items-center p-3 drop-shadow-dark2" />
       </div>
-      <div className="flex flex-col w-[428px]">
+      <div className="flex flex-col md:w-[428px] mt-5">
         <p className="text-lg font-bold md:px-5">
           {title}
         </p>
