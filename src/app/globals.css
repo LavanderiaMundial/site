@@ -4,10 +4,10 @@
 
 body {
   font-smoothing: antialiased;
-
+  overflow-x: hidden;
 }
 html {
-
+  overflow-x: hidden;
   @apply scroll-smooth;
 }
 /* :: Custom Scrollbar :: */
@@ -28,4 +28,4 @@ html {
 }
 
 overflow-x: hidden;
-  overflow-x: hidden;
+ 

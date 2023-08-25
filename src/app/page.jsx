@@ -19,14 +19,14 @@ import { motion } from "framer-motion"
 const Itens = ({ title, icon, text, text1 }) => {
   return (
     <div className="flex mt-5">
-      <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary">
+      <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary mr-1">
         <FontAwesomeIcon icon={icon} className="text-light h-8 flex justify-center items-center p-3 drop-shadow-dark2" />
       </div>
       <div className="flex flex-col w-[428px]">
-        <p className="text-lg font-bold px-5">
+        <p className="text-lg font-bold md:px-5">
           {title}
         </p>
-        <p className="p-5 px text-black/75">
+        <p className="py-5 md:p-5 text-black/75">
           {text}<br />
           {text1}
         </p>
@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <div className="pt-5 md:pt-24">
       <div className="w-screen ">
-        <Image src={mocolavanderia}  />
+        <Image src={mocolavanderia} />
       </div>
 
       <div className="flex flex-col md:flex-row h-[600px]">
@@ -143,47 +143,47 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="servicos" className="pt-24 md:px-16 w-screen mt-44">
+      <div id="servicos" className="pt-24 px-5 md:px-16 w-screen mt-44">
         <h2 className="text-center text-black/90 text-2xl font-bold my-5">
           Nossos Serviços
         </h2>
-        <nav className="flex flex-wrap md:flex-row justify-center items-center divide divide-x-2">
-          <button className={`text-xs px-5 p-2 h-16 ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+        <nav className="flex flex-wrap md:flex-nowrap md:flex-row justify-center items-center divide divide-x-2 divide-y-2">
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16   ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-s-full`}
             onClick={() => setActiveDiv(0)}>
             Lavagem de Sofás
           </button>
-          <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16 ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(1)}>
             LIMPEZA E HIDRATAÇÃO
             EM SOFÁS DE COURO.
           </button>
-          <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16 ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(2)}>
             IMPERMEABILIZAÇÃO
             EM SOFÁS E CADEIRAS
           </button>
-          <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16 ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(3)}>
             LIMPEZA
             DE COLCHÕES
           </button>
-          <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16 ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(4)}>
             LIMPEZA DE POLTRONAS,
             BANCOS E ESTOFADOS
           </button>
-          <button className={`text-xs px-5  p-2 h-16 ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16 ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(5)}>
             LIMPEZA
             DE CARPETES
           </button>
-          <button className={`text-xs px-5  p-2 h-16 ${activeDiv === 6 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+          <button className={`w-screen md:w-auto text-xs px-5 py-4 h-16 ${activeDiv === 6 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
             } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl  md:rounded-e-full`}
             onClick={() => setActiveDiv(6)}>
             LAVAGEM
@@ -192,10 +192,10 @@ export default function Home() {
         </nav>
         {activeDiv === 0 && (
           <div className="mt-8 flex flex-col md:flex-row">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemEstofado} alt="image" width={400} className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faCouch}
                 title=" Lavagem de Sofás."
@@ -212,11 +212,11 @@ export default function Home() {
 
 
         {activeDiv === 1 && (
-          <div className="mt-8 flex">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+          <div className="mt-8 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCouro} alt="image" width={400} className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faCouch}
                 title=" LIMPEZA E HIDRATAÇÃO
@@ -235,11 +235,11 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 2 && (
-          <div className="mt-8 flex">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+          <div className="mt-8 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCadeira} alt="image" width={400} className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faSearch}
                 title=" Para manter seu estofado de couro lindo, limpo e hidratado são necessários alguns cuidados especiais."
@@ -256,11 +256,11 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 3 && (
-          <div className="mt-8 flex">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+          <div className="mt-8 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faBed}
                 title=" Limpeza de Colchões"
@@ -276,11 +276,11 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 4 && (
-          <div className="mt-8 flex">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+          <div className="mt-8 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faChair}
                 title="A Higienização e Limpeza de Cadeiras Estofadas deve ser feita periodicamente, quer se trate de nossa casa, no escritório ou mesmo em uma sala de cinema."
@@ -303,11 +303,11 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 5 && (
-          <div className="mt-8 flex">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+          <div className="mt-8 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faRug}
                 title="Quando falamos em piso, imaginamos e encontramos uma infinidade de formatos, cores e modelos, e quando falamos em carpete, essas características também são encontradas."
@@ -327,11 +327,11 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 6 && (
-          <div className="mt-8 flex">
-            <div className="w-1/2 h-96 mr-20 flex justify-end">
+          <div className="mt-8 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" width={400} className="rounded-xl" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Itens
                 icon={faRug}
                 title="Sendo o tapete um item decorativo muito utilizado em casas, apartamentos e empresas, é imprescindível mantê-los sempre higienizados e livres de agentes causadores de alergias, como os ácaros, por exemplo."
@@ -347,13 +347,16 @@ export default function Home() {
           </div>
         )}
       </div>
-      <div id="residencial" className="p-16 pt-24">
+      <div id="residencial" className="p-5 md:p-16 pt-24">
         <h2 className="font-bold text-2xl text-black/90">
           COMO LIMPAMOS ESTOFADOS
         </h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
-        <div className="flex justify-center gap-5">
-          <div className="mt-5 w-1/2">
+        <div className="flex flex-col md:flex-row justify-center gap-5">
+          <div>
+            <Image src={moco2mundial} alt="imagem da limpeza de um estofado lavanderia mundial" className="rounded-xl mt-5" />
+          </div>
+          <div className="mt-5 md:w-1/2">
             <p className="text-black/75">
               1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
             </p><br />
@@ -373,22 +376,22 @@ export default function Home() {
               6. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate veniam sint fugit sapiente officiis earum libero ex molestias numquam in beatae tenetur reprehenderit dolores ad ipsum, provident, esse corporis sequi.
             </p><br />
           </div>
-          <div className="w-1/2">
+          <div className="hidden md:block w-1/2">
             <Image src={moco2mundial} alt="imagem da limpeza de um estofado lavanderia mundial" className="rounded-xl mt-5" />
           </div>
         </div>
       </div>
 
-      <div id="comercial" className="p-16 pt-24">
+      <div id="comercial" className="p-5 md:p-16 pt-24">
         <h2 className="font-bold text-2xl text-black/90">LIMPEZA COMERCIAL DE ESTOFADOS</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
-        <div className="flex justify-center gap-5">
+        <div className="flex flex-col md:flex-row justify-center gap-5">
 
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <Image src={mocoComercial} alt="imagem da limpeza de um estofado lavanderia mundial" className="rounded-xl mt-5" />
           </div>
 
-          <div className="mt-5 w-1/2">
+          <div className="mt-5 md:w-1/2">
             <p className="text-black/75">
 
               Quer se trate de sofás, cadeiras ou mesmo paredes de cubículos - podemos recuperar o estofamento da sua organização.
@@ -404,7 +407,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="perguntas" className="p-16 pt-24">
+      <div id="perguntas" className="p-5 md:p-16 pt-24">
         <h2 className="font-bold text-2xl text-black/90">
           Perguntas frequentes
         </h2>
@@ -419,14 +422,14 @@ export default function Home() {
         ))}
       </div>
 
-      <div id="contato" className="pt-24 px-16">
+      <div id="contato" className="pt-24 px-5 md:px-16">
         <h2 className="font-bold text-2xl text-black/90">Onde Estamos</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
 
         <div
-          className="mt-10 rounded-xl flex ">
-          <div className="w-1/2 rounded-xl">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-s-xl drop-shadow-drop1 w-full h-[500px] ">
+          className="mt-10 rounded-xl flex flex-col ">
+          <div className="md:w-1/2 rounded-xl">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-xl mb-5 md:rounded-s-xl  drop-shadow-drop1 w-full h-[500px] ">
             </iframe>
           </div>
           <div className="w-1/2 flex flex-col justify-center items-center gap-5 ">
@@ -435,7 +438,7 @@ export default function Home() {
               whileInView={{ x: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
               exit={{ x: -500 }}
-              className=" -z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-full">
+              className="hidden -z-10 md:flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-full">
               <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
               <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
               <div className="space-x-5">
@@ -451,6 +454,26 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+
+          <div className="md:w-1/2 flex flex-col justify-center items-center gap-5 ">
+            <div
+              className="md:hidden -z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-xl h-96">
+              <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
+              <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
+              <div className="space-x-5">
+                <Link href="#" target="_blank" className="">
+                  <FontAwesomeIcon icon={faInstagram} className="text-light h-10" />
+                </Link>
+                <Link href="#" target="_blank">
+                  <FontAwesomeIcon icon={faFacebook} className="text-light h-10" />
+                </Link>
+                <Link href="#" target="_blank">
+                  <FontAwesomeIcon icon={faWhatsapp} className="text-light h-10" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div >
