@@ -47,7 +47,7 @@ export default function NavMobile() {
                     x
                 </button>
                 <a
-                    href="#serviços"
+                    href="#servicos"
                     className=" text-yellow1 mt-20 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-secondary"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >

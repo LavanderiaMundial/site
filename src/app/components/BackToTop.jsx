@@ -22,7 +22,7 @@ export default function BackToTop() {
     <div className="">
       {isVisible && <div>
         <a href="#inicio" className='animate-bounce fixed bottom-2 right-5 text-primary transition ease-in-out duration-300 rounded-full z-50'>
-          <FontAwesomeIcon icon={faArrowAltCircleUp} className=' h-10 hover:text-amarelo rounded-full transition ease-in-out duration-300' />
+          <FontAwesomeIcon icon={faArrowAltCircleUp} className=' h-10 hover:text-amarelo bg-light rounded-full transition ease-in-out duration-300' />
         </a>
       </div>}
     </div>

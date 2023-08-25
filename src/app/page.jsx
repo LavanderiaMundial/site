@@ -107,10 +107,10 @@ export default function Home() {
         <Image src={mocolavanderia} />
       </div>
 
-      <div className="flex flex-col md:flex-row h-[600px]">
+      <div className="flex flex-col md:flex-row md:h-[600px]">
         <div className="md:hidden flex flex-col items-center z-10">
-          <div className="w-80 h-80 gradient-container bg-gradient-to-t from-primary to-secondary rounded-xl p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
-            <h2 className="text-3xl text-amarelo drop-shadow-dark1 font-bold text-center">
+          <div className="w-screen  gradient-container bg-gradient-to-t from-primary to-secondary p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
+            <h2 className="text-2xl text-amarelo drop-shadow-dark1 font-bold text-center">
               Especialistas em Limpeza de estofados.
             </h2>
             <p className="text-lg my-5  text-center mt-8 text-light ">
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="servicos" className="pt-96 md:pt-0 px-5 md:px-16 w-screen mt-44">
+      <div id="servicos" className=" md:pt-0 px-5 md:px-16 w-screen pt-44">
         <h2 className="text-center text-black/90 text-2xl font-bold my-5">
           Nossos Serviços
         </h2>
