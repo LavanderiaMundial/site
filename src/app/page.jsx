@@ -207,7 +207,7 @@ export default function Home() {
           </a>
         </nav>
         {activeDiv === 0 && (
-          <div id="lavagemSofa" className="mt-8 flex flex-col md:flex-row">
+          <div id="lavagemSofa" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemEstofado} alt="image" width={400} className="rounded-xl" />
             </div>
@@ -228,7 +228,7 @@ export default function Home() {
 
 
         {activeDiv === 1 && (
-          <div id="limpeza" className="mt-8 flex flex-col md:flex-row">
+          <div id="limpeza" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCouro} alt="image" width={400} className="rounded-xl" />
             </div>
@@ -251,7 +251,7 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 2 && (
-          <div id="cadeira" className="mt-8 flex flex-col md:flex-row">
+          <div id="cadeira" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCadeira} alt="image" width={400} className="rounded-xl" />
             </div>
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 3 && (
-          <div id="colchao" className="mt-8 flex flex-col md:flex-row">
+          <div id="colchao" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" className="rounded-xl" />
             </div>
@@ -292,7 +292,7 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 4 && (
-          <div id="poltrona" className="mt-8 flex flex-col md:flex-row">
+          <div id="poltrona" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" className="rounded-xl" />
             </div>
@@ -319,7 +319,7 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 5 && (
-          <div id="carpete" className="mt-8 flex flex-col md:flex-row">
+          <div id="carpete" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" className="rounded-xl" />
             </div>
@@ -343,7 +343,7 @@ export default function Home() {
           </div>
         )}
         {activeDiv === 6 && (
-          <div id="tapete" className="mt-8 flex flex-col md:flex-row">
+          <div id="tapete" className="pt-24 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={image} alt="image" width={400} className="rounded-xl" />
             </div>
@@ -445,7 +445,7 @@ export default function Home() {
         <div
           className="mt-10 rounded-xl md:flex ">
           <div className="md:w-1/2 rounded-xl">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className=" mb-5 rounded-xl  drop-shadow-drop1 w-full h-[500px] ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className=" mb-5 rounded-xl  drop-shadow-drop1 w-full md:h-[500px] ">
             </iframe>
           </div>
           <div className="w-1/2 flex flex-col justify-center items-center gap-5 ">
