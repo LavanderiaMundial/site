@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <div id="inicio" className=" pt-24">
       <div className="w-screen ">
-        <Image src={mocolavanderia} className="w-screen" />
+        <Image src={mocolavanderia}  />
       </div>
 
       <div className="flex h-[600px]">
@@ -137,8 +137,8 @@ export default function Home() {
             <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center hover:text-light transition-all duration-300 hover:bg-amarelo ">Orçamento</button>
           </div>
           <div className="relative w-96">
-            <Image src={sofafeliz} alt="foto de uma família feliz sentada em um sofá limpo"
-              className="rounded-xl absolute -z-10 w-96 -top-10 opacity-70"
+            <Image src={sofafeliz} alt="foto de uma família feliz sentada em um sofá limpo" width={384}
+              className="rounded-xl absolute -z-10 -top-10 opacity-70"
             />
           </div>
         </div>
@@ -433,7 +433,8 @@ export default function Home() {
             <motion.div
               initial={{ x: -500 }}
               whileInView={{ x: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              exit={{ x: -500 }}
               className=" -z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-full">
               <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
               <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>

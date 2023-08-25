@@ -10,3 +10,19 @@ html {
   overflow-x: hidden;
   @apply scroll-smooth;
 }
+/* :: Custom Scrollbar :: */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #009BDB;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D0E6F7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C2DFF4;
+}
