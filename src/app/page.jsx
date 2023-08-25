@@ -108,6 +108,18 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col md:flex-row h-[600px]">
+        <div className="md:hidden flex flex-col items-center z-10">
+          <div className="w-80 h-80 gradient-container bg-gradient-to-t from-primary to-secondary rounded-xl p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
+            <h2 className="text-3xl text-amarelo drop-shadow-dark1 font-bold text-center">
+              Especialistas em Limpeza de estofados.
+            </h2>
+            <p className="text-lg my-5  text-center mt-8 text-light ">
+              Solicite seu orçamento sem compromisso!
+            </p>
+            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center hover:text-light transition-all duration-300 hover:bg-amarelo ">Orçamento</button>
+          </div>
+         
+        </div>
         <div className="w-screen px-5 md:w-1/2 md:pl-16">
           <h2 className="text-2xl text-black/90 w-96 py-5 font-bold">
             LIMPEZA DE MÓVEIS E ESTOFADOS
@@ -126,7 +138,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="hidden md:flex flex-col  items-center w-1/2 md:-mt-28 z-10">
+        <div className="hidden md:flex flex-col items-center md:w-1/2 md:-mt-28 z-10">
           <div className="w-80 h-80 gradient-container bg-gradient-to-t from-primary to-secondary rounded-xl p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
             <h2 className="text-3xl text-amarelo drop-shadow-dark1 font-bold text-center">
               Especialistas em Limpeza de estofados.
@@ -143,7 +155,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="servicos" className="pt-24 px-5 md:px-16 w-screen mt-44">
+      <div id="servicos" className="pt-96 md:pt-0 px-5 md:px-16 w-screen mt-44">
         <h2 className="text-center text-black/90 text-2xl font-bold my-5">
           Nossos Serviços
         </h2>
@@ -353,7 +365,7 @@ export default function Home() {
         </h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
         <div className="flex flex-col md:flex-row justify-center gap-5">
-          <div>
+          <div className="block md:hidden ">
             <Image src={moco2mundial} alt="imagem da limpeza de um estofado lavanderia mundial" className="rounded-xl mt-5" />
           </div>
           <div className="mt-5 md:w-1/2">
@@ -427,18 +439,18 @@ export default function Home() {
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
 
         <div
-          className="mt-10 rounded-xl flex flex-col ">
+          className="mt-10 rounded-xl md:flex ">
           <div className="md:w-1/2 rounded-xl">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-xl mb-5 md:rounded-s-xl  drop-shadow-drop1 w-full h-[500px] ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.793896370712!2d-49.220685!3d-16.687194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12a8266be0f%3A0x8e32126a4523c014!2sLavanderia%20Mundial!5e0!3m2!1spt-BR!2sbr!4v1692900600663!5m2!1spt-BR!2sbr" width="600" allowfullscreen="" height={300} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className=" mb-5 rounded-xl  drop-shadow-drop1 w-full h-[500px] ">
             </iframe>
           </div>
           <div className="w-1/2 flex flex-col justify-center items-center gap-5 ">
             <motion.div
-              initial={{ x: -500 }}
+              initial={{ x: -400 }}
               whileInView={{ x: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              exit={{ x: -500 }}
-              className="hidden -z-10 md:flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-full">
+              exit={{ x: -400 }}
+              className="hidden -z-10 md:flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-96">
               <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
               <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
               <div className="space-x-5">
@@ -455,9 +467,9 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="md:w-1/2 flex flex-col justify-center items-center gap-5 ">
+          <div className="md:w-1/2 md:hidden flex flex-col  justify-center items-center gap-5 ">
             <div
-              className="md:hidden -z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-xl h-96">
+              className=" -z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-xl h-96">
               <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
               <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
               <div className="space-x-5">

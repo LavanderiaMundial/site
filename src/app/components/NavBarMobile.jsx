@@ -19,7 +19,7 @@ export default function NavMobile() {
             <div className=' flex justify-around items-center py-1 w-screen'>
                 <div className='flex justify-center items-center'>
                     <Image src={logo} alt="logo da Fazenda Santo Antônio"
-                        className="w-24"
+                        className="w-36"
                     />
                 </div>
                 <svg
