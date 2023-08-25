@@ -116,7 +116,9 @@ export default function Home() {
             <p className="text-lg my-5  text-center mt-8 text-light ">
               Solicite seu orçamento sem compromisso!
             </p>
-            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center hover:bg-secondary hover:text-light transition-all duration-300 ">Orçamento</button>
+            <Link href="#" target="_blank"className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center transition-all duration-300 ">
+              Orçamento
+            </Link>
           </div>
 
         </div>
@@ -146,9 +148,9 @@ export default function Home() {
             <p className="text-lg my-5  text-center mt-8 text-light ">
               Solicite seu orçamento sem compromisso!
             </p>
-            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center transition-all duration-300 hover:bg-secondary hover:text-light ">
+            <Link href="#" target="_blank" className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center transition-all duration-30">
               Orçamento
-            </button>
+            </Link>
           </div>
           <div className="relative w-96">
             <Image src={sofafeliz} alt="foto de uma família feliz sentada em um sofá limpo" width={384}
