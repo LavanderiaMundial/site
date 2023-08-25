@@ -116,7 +116,7 @@ export default function Home() {
             <p className="text-lg my-5  text-center mt-8 text-light ">
               Solicite seu orçamento sem compromisso!
             </p>
-            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center hover:text-light transition-all duration-300 hover:bg-primary ">Orçamento</button>
+            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center hover:bg-secondary hover:text-light transition-all duration-300 ">Orçamento</button>
           </div>
 
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
             <p className="text-lg my-5  text-center mt-8 text-light ">
               Solicite seu orçamento sem compromisso!
             </p>
-            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center hover:text-light transition-all duration-300 hover:bg-primary">
+            <button className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center transition-all duration-300 hover:bg-secondary hover:text-light ">
               Orçamento
             </button>
           </div>
