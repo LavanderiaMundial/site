@@ -102,13 +102,13 @@ export default function Home() {
   ];
 
   return (
-    <div id="inicio" className=" pt-24">
+    <div className="pt-5 md:pt-24">
       <div className="w-screen ">
         <Image src={mocolavanderia}  />
       </div>
 
-      <div className="flex h-[600px]">
-        <div className="w-1/2 pl-16">
+      <div className="flex flex-col md:flex-row h-[600px]">
+        <div className="w-screen px-5 md:w-1/2 md:pl-16">
           <h2 className="text-2xl text-black/90 w-96 py-5 font-bold">
             LIMPEZA DE MÓVEIS E ESTOFADOS
             <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
@@ -126,7 +126,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col  items-center w-1/2 -mt-28 z-10">
+        <div className="hidden md:flex flex-col  items-center w-1/2 md:-mt-28 z-10">
           <div className="w-80 h-80 gradient-container bg-gradient-to-t from-primary to-secondary rounded-xl p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
             <h2 className="text-3xl text-amarelo drop-shadow-dark1 font-bold text-center">
               Especialistas em Limpeza de estofados.
@@ -143,55 +143,55 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="servicos" className="pt-24 px-16 w-screen">
+      <div id="servicos" className="pt-24 md:px-16 w-screen mt-44">
         <h2 className="text-center text-black/90 text-2xl font-bold my-5">
           Nossos Serviços
         </h2>
-        <nav className="flex justify-center items-center divide divide-x-2">
-          <button className={`text-xs px-5  p-2 h-16 ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-s-full`}
+        <nav className="flex flex-wrap md:flex-row justify-center items-center divide divide-x-2">
+          <button className={`text-xs px-5 p-2 h-16 ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-s-full`}
             onClick={() => setActiveDiv(0)}>
             Lavagem de Sofás
           </button>
-          <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+          <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(1)}>
             LIMPEZA E HIDRATAÇÃO
             EM SOFÁS DE COURO.
           </button>
           <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(2)}>
             IMPERMEABILIZAÇÃO
             EM SOFÁS E CADEIRAS
           </button>
           <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(3)}>
             LIMPEZA
             DE COLCHÕES
           </button>
           <button className={`text-xs px-5   p-2 h-16 ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(4)}>
             LIMPEZA DE POLTRONAS,
             BANCOS E ESTOFADOS
           </button>
           <button className={`text-xs px-5  p-2 h-16 ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`}
             onClick={() => setActiveDiv(5)}>
             LIMPEZA
             DE CARPETES
           </button>
           <button className={`text-xs px-5  p-2 h-16 ${activeDiv === 6 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"
-            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-e-full`}
+            } hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl  md:rounded-e-full`}
             onClick={() => setActiveDiv(6)}>
             LAVAGEM
             DE TAPETES
           </button>
         </nav>
         {activeDiv === 0 && (
-          <div className={`mt-8 flex`}>
+          <div className="mt-8 flex flex-col md:flex-row">
             <div className="w-1/2 h-96 mr-20 flex justify-end">
               <Image src={lavagemEstofado} alt="image" width={400} className="rounded-xl" />
             </div>

@@ -4,7 +4,6 @@ import logo from "../../../public/logo-principal.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
-
 const CustomLink = ({ href, title, className = "" }) => {
     return (
         <a href={href} className={`${className} group relative z-10   font-bold  w-auto px-2 text-center justify-center items-center flex hover:text-light transition-all duration-300 text-primary uppercase`}>
@@ -23,11 +22,12 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 export default function NavBar() {
     return (
-        <div>
+        <div className="hidden md:block">
+            
             <div className="fixed z-50 backdrop-blur-lg bg-white/50 w-screen flex justify-between px-16 items-end pb-5 space-x-10">
                 <Image src={logo} alt="logo da empresa" className=" w-48" />
                 <div className="space-x-8 flex">
-                   
+
                     <CustomLink href="#servicos" title="Serviços" />
                     <div className="group relative cursor-pointer">
                         <h2 className="text-primary font-bold uppercase">

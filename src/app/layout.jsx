@@ -1,5 +1,6 @@
 import BackToTop from './components/BackToTop'
 import NavBar from './components/NavBar'
+import NavMobile from './components/NavBarMobile'
 
 import Footer from './components/footer'
 import './globals.css'
@@ -16,9 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
 
-      <body className={inter.className}>
+      <body id='inicio' className={inter.className}>
         <BackToTop />
         <NavBar />
+        <NavMobile/>
         {children}
         <Footer />
       </body>

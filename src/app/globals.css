@@ -4,10 +4,10 @@
 
 body {
   font-smoothing: antialiased;
-  overflow-x: hidden;
+
 }
 html {
-  overflow-x: hidden;
+
   @apply scroll-smooth;
 }
 /* :: Custom Scrollbar :: */
@@ -26,3 +26,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #C2DFF4;
 }
+
+overflow-x: hidden;
+  overflow-x: hidden;
