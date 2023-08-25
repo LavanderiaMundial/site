@@ -34,9 +34,69 @@ const Itens = ({ title, icon, text, text1 }) => {
   )
 }
 
+{/*perguntas frequentes*/ }
+
+const Perguntas = ({ pergunta, resposta }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="mt-5">
+      <div className="flex flex-col justify-between items-center w-full bg-slate-100 p-3 group rounded-xl">
+        <div
+          className="flex justify-between items-center w-full cursor-pointer"
+          onClick={toggleOpen}
+        >
+          <h2>{pergunta}</h2>
+          <FontAwesomeIcon
+            icon={faCaretSquareDown}
+            className={`ml-2 text-primary h-10 ${isOpen ? 'rotate-180' : ''
+              } cursor-pointer`}
+          />
+        </div>
+        <div
+          className={`overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            } transition-all duration-300 `}
+        >
+          {resposta}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 export default function Home() {
 
   const [activeDiv, setActiveDiv] = useState(0);
+
+  {/*perguntas e respostas -------------------------- */ }
+  const perguntasERespostas = [
+    {
+      pergunta: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      resposta: 'Ipsum exercitationem distinctio iusto tempora cupiditate hic, laboriosam culpa quaerat voluptatem. Quidem, harum quibusdam et perspiciatis consequatur provident quisquam ex modi unde!',
+    },
+    {
+      pergunta: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      resposta: 'Ipsum exercitationem distinctio iusto tempora cupiditate hic, laboriosam culpa quaerat voluptatem. Quidem, harum quibusdam et perspiciatis consequatur provident quisquam ex modi unde!',
+    },
+    {
+      pergunta: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      resposta: 'Ipsum exercitationem distinctio iusto tempora cupiditate hic, laboriosam culpa quaerat voluptatem. Quidem, harum quibusdam et perspiciatis consequatur provident quisquam ex modi unde!',
+    },
+    {
+      pergunta: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      resposta: 'Ipsum exercitationem distinctio iusto tempora cupiditate hic, laboriosam culpa quaerat voluptatem. Quidem, harum quibusdam et perspiciatis consequatur provident quisquam ex modi unde!',
+    },
+    {
+      pergunta: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      resposta: 'Ipsum exercitationem distinctio iusto tempora cupiditate hic, laboriosam culpa quaerat voluptatem. Quidem, harum quibusdam et perspiciatis consequatur provident quisquam ex modi unde!',
+    },
+
+  ];
 
   return (
     <div id="inicio" className=" pt-24">
@@ -286,7 +346,9 @@ export default function Home() {
         )}
       </div>
       <div id="residencial" className="p-16 pt-24">
-        <h2 className="font-bold text-2xl text-black/90">COMO LIMPAMOS ESTOFADOS</h2>
+        <h2 className="font-bold text-2xl text-black/90">
+          COMO LIMPAMOS ESTOFADOS
+        </h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
         <div className="flex justify-center gap-5">
           <div className="mt-5 w-1/2">
@@ -345,18 +407,16 @@ export default function Home() {
           Perguntas frequentes
         </h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
-        <div className="mt-5">
-          <div className="flex flex-col justify-between items-center w-full bg-slate-100 p-3 group">
-            <div className="flex justify-between w-full">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis beatae officia iste?</h2>
-              <FontAwesomeIcon icon={faCaretSquareDown} className="ml-2 text-primary h-10 justify-end" />
-            </div>
-            <div className=" hidden opacity-0 group-hover:opacity-100 group-hover:block transition-all duration-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error impedit optio saepe ad quam rem totam quia eligendi. Labore et nostrum quis molestiae repellat qui ex earum minima totam.
-            </div>
-          </div>
-        </div>
+
+        {perguntasERespostas.map((par, index) => (
+          <Perguntas
+            key={index}
+            pergunta={par.pergunta}
+            resposta={par.resposta}
+          />
+        ))}
       </div>
+
       <div id="contato" className="pt-24 px-16">
         <h2 className="font-bold text-2xl text-black/90">Onde Estamos</h2>
         <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl" />
