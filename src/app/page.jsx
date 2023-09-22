@@ -103,8 +103,8 @@ export default function Home() {
 
   return (
     <div className="pt-5 md:pt-24">
-      <div className="w-screen ">
-        <Image src={mocolavanderia} />
+      <div className="w-screen">
+        <Image src={mocolavanderia} className="w-screen" />
       </div>
 
       <div className="flex flex-col md:flex-row md:h-[600px]">
