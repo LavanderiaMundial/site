@@ -7,7 +7,10 @@ import lavagemCouro from "../../public/lavagemCouro.jpg"
 import lavagemCadeira from "../../public/lavagemCadeira.jpg"
 import sofafeliz from "../../public/sofafeliz.jpg"
 import mocoComercial from "../../public/mocoComercial.jpg"
-import image from "../../public/sofafeliz.jpg"
+import lavagemTapete from "../../public/lavagemTapete.jpg"
+import lavagemCarpete from "../../public/lavagemCarpete.jpg"
+import lavagemPoltrona from "../../public/lavagemPoltrona.jpg"
+import lavagemColchoes from "../../public/lavagemColchoes.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretSquareDown } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -211,7 +214,7 @@ export default function Home() {
         { activeDiv === 3 && (
           <div id="colchao" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
-              <Image src={image} alt="image" width={400} className="rounded-xl" />
+              <Image src={lavagemColchoes} alt="image" width={400} className="rounded-xl" />
             </div>
             <div className="md:w-1/3">
               <Itens title="Limpeza de Colchões" text=" Damos ao seu Colchão um tratamento muita especial com uma super Limpeza Profissional com anti bactericida e removendo todo tipo de sujeiras vamos manter ele Limpo com tecnologia de ultima geração. Confira!" />
@@ -222,7 +225,7 @@ export default function Home() {
         { activeDiv === 4 && (
           <div id="poltrona" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
-              <Image src={image} alt="image" width={400} className="rounded-xl" />
+              <Image src={lavagemPoltrona} alt="image" width={400} className="rounded-xl" />
             </div>
             <div className="md:w-1/3">
               <Itens title="A Higienização e Limpeza de Cadeiras Estofadas deve ser feita periodicamente, quer se trate de nossa casa, no escritório ou mesmo em uma sala de cinema." text="As cadeiras estofadas estão sempre expostas a sujidades, por mais cuidado que tenhamos. Muitas vezes não conseguimos impedir que os acidentes aconteçam, e derramamos líquidos ou mesmo comida, principalmente quando temos crianças em casa." />
@@ -233,7 +236,7 @@ export default function Home() {
         { activeDiv === 5 && (
           <div id="carpete" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
-              <Image src={image} alt="image" width={400} className="rounded-xl" />
+              <Image src={lavagemCarpete} alt="image" width={400} className="rounded-xl" />
             </div>
             <div className="md:w-1/3">
               <Itens title="Existem vários tipos e modelos de carpetes no mercado." text="O carpete reveste por completo o assoalho dos cômodos, podendo ser usados para compor uma decoração e deixando um ambiente com um ar de aconchego. Por isso cada vez mais pessoas estão redescobrindo a versatilidade e a beleza que essa peça pode trazer para os ambientes que estão instalados. Podemos encontrar no mercado uma grande variedade de modelos e texturas, e as vantagens são diversas, como isolamento térmico, conforto e aparência." />
@@ -244,7 +247,7 @@ export default function Home() {
         { activeDiv === 6 && (
           <div id="tapete" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
-              <Image src={image} alt="image" width={400} className="rounded-xl" />
+              <Image src={lavagemTapete} alt="image" width={400} className="rounded-xl" />
             </div>
             <div className="md:w-1/3">
               <Itens title="Sendo o tapete um item decorativo muito utilizado em casas, apartamentos e empresas, é imprescindível mantê-los sempre higienizados." text="Mas, para que o seu tapete fique realmente limpo, é altamente recomendável contratar uma empresa que realize a higienização de forma profissional, já que fazê-la por conta própria não é suficiente para remover de forma efetiva todas as impurezas do tapete." />
