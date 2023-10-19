@@ -160,47 +160,56 @@ export default function Home() {
         <h2 className="text-3xl text-light/90 w-auto font-bold flex justify-center items-center">Serviços</h2>
         <p className="font-bold pb-10 flex justify-center items-center text-yellow-200">Confira abaixo os serviços que executamos</p>
 
-          <nav className="flex flex-wrap md:flex-nowrap md:flex-row justify-center items-center divide divide-x-2 divide-y-2">
+          <nav className="flex flex-wrap md:flex-nowrap md:flex-row justify-center items-center divide-x-2">
 
-            <a href="#lavagemSofa" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-s-full`} onClick={() => setActiveDiv(0)}>Lavagem de Sofás</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-s-full`} onClick={() => setActiveDiv(1)}>Lavagem de Tapetes</a>
 
-            <a href='#limpeza' className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(1)}>Limpeza e hidratação em sofás de couro</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(2)}>Limpeza e Higienização de estofados</a>
 
-            <a href="#cadeira" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(2)}>Impermeabilização em sofás e cadeiras</a>
+            <a href='#servicos' className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(3)}>Limpeza e Hidratação em couro</a>
 
-            <a href="#colchao" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 text-center flex justify-center items-center ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light":"bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(3)}>Limpeza de colchões</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(4)}>Impermeabilização em estofados</a>
 
-            <a href="#poltrona" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(4)}>Limpeza de Poltronas, bancos e estofados</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 text-center flex justify-center items-center ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light":"bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(5)}>Limpeza e Higienização de colchões</a>
             
-            <a href="#carpete" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(5)}>Limpeza de Carpetes</a>
-
-            <a href="#tapete" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 6 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl  md:rounded-e-full`} onClick={() => setActiveDiv(6)}>Lavagem de Tapetes</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 6 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-e-full`} onClick={() => setActiveDiv(6)}>Limpeza e Higienização de carpetes</a>
 
         </nav>
+
+        { activeDiv === 1 && (
+          <div id="tapete" className="pt-5 pb-10 flex flex-col md:flex-row">
+            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
+              <Image src={lavagemTapete} alt="image" width={400} className="rounded-xl" />
+            </div>
+            <div className="md:w-1/3">
+              <Itens title="Sendo o tapete um item decorativo muito utilizado em casas, apartamentos e empresas, é imprescindível mantê-los sempre higienizados." text="Mas, para que o seu tapete fique realmente limpo, é altamente recomendável contratar uma empresa que realize a higienização de forma profissional, já que fazê-la por conta própria não é suficiente para remover de forma efetiva todas as impurezas do tapete." />
+            </div>
+          </div>
+        )}
         
-        { activeDiv === 0 && (
+        { activeDiv === 2 && (
           <div id="lavagemSofa" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemEstofado} alt="image" width={400} className="rounded-xl" />
             </div>
             <div className="md:w-1/3">
-              <Itens title="Lavagem de Sofás" text="A lavagem de estofados em um ambiente familiar é muito importante manter a saúde e a disposição das pessoas que ali convivem. Não raro, a limpeza incorreta em sofás e almofadas, acaba por incidir no aumento de casos de doenças respiratórias como: rinites, sinusites, resfriados e bronquite, entre outras, que têm o processo alérgico potencializado devido ao acúmulo de fungos, bactérias e ácaros nos revestimentos." />
+              <Itens title="Limpeza e Higienização de estofados" text="A lavagem de estofados em um ambiente familiar é muito importante manter a saúde e a disposição das pessoas que ali convivem. Não raro, a limpeza incorreta em sofás e almofadas, acaba por incidir no aumento de casos de doenças respiratórias como: rinites, sinusites, resfriados e bronquite, entre outras, que têm o processo alérgico potencializado devido ao acúmulo de fungos, bactérias e ácaros nos revestimentos." />
             </div>
           </div>
         )}
 
-        { activeDiv === 1 && (
+        { activeDiv === 3 && (
           <div id="limpeza" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCouro} alt="image" width={400} className="rounded-xl" />
             </div>
             <div className="md:w-1/3">
-              <Itens title="Limpeza e hidratação em sofás de couro" text="Para manter seu estofado de couro lindo, limpo e hidratado são necessários alguns cuidados especiais. Realizamos limpeza e hidratação de couros utilizando produtos específicos fabricados por uma empresa especializada. Desta forma, podemos garantir a qualidade e eficiência do serviço realizado." />
+              <Itens title="Limpeza e hidratação em couro" text="Para manter seu estofado de couro lindo, limpo e hidratado são necessários alguns cuidados especiais. Realizamos limpeza e hidratação de couros utilizando produtos específicos fabricados por uma empresa especializada. Desta forma, podemos garantir a qualidade e eficiência do serviço realizado." />
             </div>
           </div>
         )}
 
-        { activeDiv === 2 && (
+        { activeDiv === 4 && (
           <div id="cadeira" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCadeira} alt="image" width={400} className="rounded-xl" />
@@ -211,7 +220,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 3 && (
+        { activeDiv === 5 && (
           <div id="colchao" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemColchoes} alt="image" width={400} className="rounded-xl" />
@@ -222,18 +231,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 4 && (
-          <div id="poltrona" className="pt-5 pb-10 flex flex-col md:flex-row">
-            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
-              <Image src={lavagemPoltrona} alt="image" width={400} className="rounded-xl" />
-            </div>
-            <div className="md:w-1/3">
-              <Itens title="A Higienização e Limpeza de Cadeiras Estofadas deve ser feita periodicamente, quer se trate de nossa casa, no escritório ou mesmo em uma sala de cinema." text="As cadeiras estofadas estão sempre expostas a sujidades, por mais cuidado que tenhamos. Muitas vezes não conseguimos impedir que os acidentes aconteçam, e derramamos líquidos ou mesmo comida, principalmente quando temos crianças em casa." />
-            </div>
-          </div>
-        )}
-
-        { activeDiv === 5 && (
+        { activeDiv === 6 && (
           <div id="carpete" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCarpete} alt="image" width={400} className="rounded-xl" />
@@ -244,16 +242,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 6 && (
-          <div id="tapete" className="pt-5 pb-10 flex flex-col md:flex-row">
-            <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
-              <Image src={lavagemTapete} alt="image" width={400} className="rounded-xl" />
-            </div>
-            <div className="md:w-1/3">
-              <Itens title="Sendo o tapete um item decorativo muito utilizado em casas, apartamentos e empresas, é imprescindível mantê-los sempre higienizados." text="Mas, para que o seu tapete fique realmente limpo, é altamente recomendável contratar uma empresa que realize a higienização de forma profissional, já que fazê-la por conta própria não é suficiente para remover de forma efetiva todas as impurezas do tapete." />
-            </div>
-          </div>
-        )}
+        
 
       </div>
 
@@ -270,34 +259,7 @@ export default function Home() {
           </div>
           <div className="mt-5 lg:w-1/1">
             <p className="text-black/75">
-              A limpeza de estofados é uma tarefa importante para manter a casa sempre limpa e bonita. Os estofados são peças essenciais na decoração de qualquer ambiente, mas com o uso e o tempo, eles podem acumular sujeira, poeira e manchas. <br /><br />
-
-              Para remover essa sujeira e manter os estofados sempre limpos e bonitos, é importante contratar um serviço de limpeza profissional. <br /><br />
-
-              Aqui na Lavanderia Mundial, utilizamos um processo de limpeza completo e eficaz, que garante a remoção de manchas, sujeira e ácaros, sem danificar o tecido do estofado. <br /><br />
-
-              O nosso processo de limpeza inclui as seguintes etapas: <br /><br />
-
-              <span className="font-bold">Aspiração</span> <br />
-              A primeira etapa é a aspiração, que serve para remover poeira, pelos e outros resíduos do estofado. <br /><br />
-
-              <span className="font-bold">Aplicação de produtos</span> <br />
-              Após a aspiração, são aplicados produtos específicos para limpeza de estofados. Esses produtos são desenvolvidos para remover manchas, sujeira e ácaros. <br /><br />
-
-              <span className="font-bold">Esfregação</span> <br />
-              Em alguns casos, é necessário esfregar o estofado para remover manchas mais difíceis. <br /><br />
-
-              <span className="font-bold">Enxágue</span> <br />
-              Após a esfregação, o estofado é enxaguado para remover os resíduos de produtos. <br /><br />
-
-              <span className="font-bold">Secagem</span> <br />
-              O estofado é seco com um aspirador de pó ou um secador profissional. <br /><br />
-
-              Além do processo de limpeza completo, também utilizamos equipamentos e produtos de alta qualidade para garantir um resultado impecável. <br /><br />
-
-              Nossos profissionais são qualificados e experientes, e estão prontos para atender às suas necessidades com excelência. <br /><br />
-
-              Entre em contato conosco e solicite um orçamento para limpeza de estofados.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sunt provident quos, fuga aperiam praesentium nesciunt, fugiat delectus illo expedita accusamus ab blanditiis doloremque enim at molestias voluptatum. Eligendi, non?
             </p>
             <div className="w-full flex mt-5">
             <button className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold">
