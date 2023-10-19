@@ -103,13 +103,13 @@ export default function Home() {
         </div>
         <div className="w-screen px-5 md:w-1/2 md:pl-16">
           <h2 className="text-2xl text-black/90 w-auto py-5 font-bold mt-7">
-            Limpeza de Móveis e Estofados
+            Limpeza de Estofados
             <div className="gradient-container bg-gradient-to-t from-primary to-secondary h-1 w-20 rounded-xl mt-3" />
           </h2>
 
-          <p className="text-base text-black/75">Os móveis e estofados são peças essenciais na decoração de qualquer ambiente. Eles são confortáveis, aconchegantes e trazem um toque de personalidade à casa. No entanto, com o uso e o tempo, eles podem acumular sujeira, poeira e manchas.</p><br />
+          <p className="text-base text-black/75">Os estofados são peças essenciais na decoração de qualquer ambiente. Eles são confortáveis, aconchegantes e trazem um toque de personalidade à casa. No entanto, com o uso e o tempo, eles podem acumular sujeira, poeira e manchas.</p><br />
           
-          <p className="text-base text-black/75">Para manter os móveis e estofados sempre limpos e bonitos, é importante realizar uma limpeza regular. No entanto, em alguns casos, a limpeza doméstica pode não ser suficiente para remover as manchas mais difíceis ou para eliminar ácaros e bactérias, que podem causar alergias.</p><br />
+          <p className="text-base text-black/75">Para manter os estofados sempre limpos e bonitos, é importante realizar uma limpeza regular. No entanto, em alguns casos, a limpeza doméstica pode não ser suficiente para remover as manchas mais difíceis ou para eliminar ácaros e bactérias, que podem causar alergias.</p><br />
           
           <p className="text-base text-black/75">Nesses casos, é recomendado contratar um serviço de limpeza profissional de estofados e a Lavanderia Mundial é a mais recomendada. Somos uma lavanderia de estofados especializada que conta com equipamentos e produtos específicos para limpeza profunda de móveis e estofados, além de profissionais qualificados para realizar o serviço de forma segura e eficaz.</p><br />
 
