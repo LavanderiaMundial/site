@@ -162,21 +162,21 @@ export default function Home() {
 
           <nav className="flex flex-wrap md:flex-nowrap md:flex-row justify-center items-center divide-x-2">
 
-            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-s-full`} onClick={() => setActiveDiv(1)}>Lavagem de Tapetes</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 0 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-s-full`} onClick={() => setActiveDiv(1)}>Lavagem de Tapetes</a>
 
-            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(2)}>Limpeza e Higienização de estofados</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 1 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(2)}>Limpeza e Higienização de estofados</a>
 
-            <a href='#servicos' className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(3)}>Limpeza e Hidratação em couro</a>
+            <a href='#servicos' className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 2 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300 rounded-3xl md:rounded-none`"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(3)}>Limpeza e Hidratação em couro</a>
 
-            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(4)}>Impermeabilização em estofados</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex justify-center items-center text-center ${activeDiv === 3 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(4)}>Impermeabilização em estofados</a>
 
-            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 text-center flex justify-center items-center ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light":"bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(5)}>Limpeza e Higienização de colchões</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 text-center flex justify-center items-center ${activeDiv === 4 ? "bg-gradient-to-t from-primary to-secondary text-light":"bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-none`} onClick={() => setActiveDiv(5)}>Limpeza e Higienização de colchões</a>
             
-            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 6 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-e-full`} onClick={() => setActiveDiv(6)}>Limpeza e Higienização de carpetes</a>
+            <a href="#servicos" className={`w-screen md:w-auto text-xs px-5 py-4 h-16 flex text-center justify-center items-center ${activeDiv === 5 ? "bg-gradient-to-t from-primary to-secondary text-light" : "bg-zinc-300"} hover:bg-gradient-to-t from-primary to-secondary font-bold text-black/75 hover:text-light transition-all duration-300 rounded-3xl md:rounded-e-full`} onClick={() => setActiveDiv(6)}>Limpeza e Higienização de carpetes</a>
 
         </nav>
 
-        { activeDiv === 1 && (
+        { activeDiv === 0 && (
           <div id="tapete" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemTapete} alt="image" width={400} className="rounded-xl" />
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         )}
         
-        { activeDiv === 2 && (
+        { activeDiv === 1 && (
           <div id="lavagemSofa" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemEstofado} alt="image" width={400} className="rounded-xl" />
@@ -198,7 +198,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 3 && (
+        { activeDiv === 2 && (
           <div id="limpeza" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCouro} alt="image" width={400} className="rounded-xl" />
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 4 && (
+        { activeDiv === 3 && (
           <div id="cadeira" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCadeira} alt="image" width={400} className="rounded-xl" />
@@ -220,7 +220,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 5 && (
+        { activeDiv === 4 && (
           <div id="colchao" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemColchoes} alt="image" width={400} className="rounded-xl" />
@@ -231,7 +231,7 @@ export default function Home() {
           </div>
         )}
 
-        { activeDiv === 6 && (
+        { activeDiv === 5 && (
           <div id="carpete" className="pt-5 pb-10 flex flex-col md:flex-row">
             <div className="md:w-1/2 h-96 md:mr-20 flex justify-center md:justify-end">
               <Image src={lavagemCarpete} alt="image" width={400} className="rounded-xl" />
@@ -241,8 +241,6 @@ export default function Home() {
             </div>
           </div>
         )}
-
-        
 
       </div>
 
