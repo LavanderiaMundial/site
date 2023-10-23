@@ -16,6 +16,36 @@ import { useState } from "react";
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { motion } from "framer-motion"
+// Aqui começa o SLIDER
+import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
+const fadeImages = [
+  {
+    url: 'https://blog.coldwellbanker.com/wp-content/uploads/2018/07/Untitled-design-1.jpg'
+  },
+  {
+    url: 'https://organizinglady.com/wp-content/uploads/2015/06/organizedhome2.jpg'
+  },
+  {
+    url: 'https://www.yourhappyhome.company/wp-content/uploads/2014/04/Cleaners-in-Bournemouth1.jpg'
+  },
+];
+
+const Slideshow = () => {
+  return (
+    <div className="slide-container">
+      <Fade>
+        {fadeImages.map((fadeImage, index) => (
+          <div key={index}>
+            <img style={{ width: '100%' }} src={fadeImage.url} />
+            <h2>{fadeImage.caption}</h2>
+          </div>
+        ))}
+      </Fade>
+    </div>
+  )
+}
 
 const Itens = ({ title, icon, text, text1 }) => {
   return (
@@ -84,7 +114,8 @@ export default function Home() {
   return (
     <div className="pt-5 md:pt-24">
       <div className="w-screen">
-        <Image src={mocolavanderia} className="w-screen" alt="Lavanderia Mundial" />
+        {/* <Image src={mocolavanderia} className="w-screen" alt="Lavanderia Mundial" /> */}
+        <Slideshow />
       </div>
 
       <div className="flex flex-col md:flex-row md:h-[600px]">
