@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image";
-import mocoComercial from "../../../public/mocoComercial.jpg"
+import mocoComercial from "../../../public/mocoComercial.webp"
 
 const Section03 = () => {
 

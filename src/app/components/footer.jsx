@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import rixxer from "../../../public/rixxer.png"
-import logo from "../../../public/logo-principal.png"
+import rixxer from "../../../public/rixxer.webp"
+import logo from "../../../public/logo-principal.webp"
 const data = new Date()
 const ano = data.getFullYear()
 

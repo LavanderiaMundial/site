@@ -1,12 +1,12 @@
 "use client"
 import Image from "next/image";
-import logo from "../../../public/logo-principal.png"
+import logo from "../../../public/logo-principal.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
     return (
-        <a href={href} className={`${className} group relative z-10   font-bold  w-auto px-2 text-center justify-center items-center flex hover:text-light transition-all duration-300 text-primary uppercase`}>
+        <a href={href} className={`${className} group relative z-10 font-bold w-auto px-2 text-center justify-center items-center flex hover:text-light transition-all duration-300 text-primary uppercase`}>
             {title}
             <span
                 className={`-z-20 h-0 w-full inline-block rounded absolute left-0 -bottom-0.5  group-hover:h-7 transition-[height] ease duration-300 

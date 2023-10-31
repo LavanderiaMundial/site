@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image";
-import lavagemCarpete from "../../../public/lavagemCarpete.jpg"
+import lavagemCarpete from "../../../public/lavagemCarpete.webp"
 
 const Section03 = () => {
 

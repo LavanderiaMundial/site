@@ -3,12 +3,12 @@ import { useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import lavagemEstofado from "../../../public/lavagemEstofado.jpg"
-import lavagemCouro from "../../../public/lavagemCouro.jpg"
-import impermeabilizacaoEstofado from "../../../public/impermeabilizacaoEstofado.jpg"
-import lavagemTapete from "../../../public/lavagemTapete.jpg"
-import lavagemCarpete from "../../../public/lavagemCarpete.jpg"
-import lavagemColchoes from "../../../public/lavagemColchoes.jpg"
+import lavagemEstofado from "../../../public/lavagemEstofado.webp"
+import lavagemCouro from "../../../public/lavagemCouro.webp"
+import impermeabilizacaoEstofado from "../../../public/impermeabilizacaoEstofado.webp"
+import lavagemTapete from "../../../public/lavagemTapete.webp"
+import lavagemCarpete from "../../../public/lavagemCarpete.webp"
+import lavagemColchoes from "../../../public/lavagemColchoes.webp"
 
 const Section02 = () => {
 

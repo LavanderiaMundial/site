@@ -6,8 +6,8 @@ import {
     faHome,
     faCoffee,
 } from '@fortawesome/free-solid-svg-icons'
-import logob from '../../../public/logobrancoprincipal.png'
-import logo from '../../../public/logo-principal.png'
+import logob from '../../../public/logobrancoprincipal.webp'
+import logo from '../../../public/logo-principal.webp'
 
 import { useState } from 'react'
 import Image from 'next/image'
