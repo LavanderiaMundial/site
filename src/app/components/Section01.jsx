@@ -5,6 +5,7 @@ import fotoSofaTopo from "../../../public/sofa.jpg"
 
 const Section01 = () => {
     return (
+      <div className="flex flex-col md:flex-row md:h-[600px]">
         <div className="flex flex-col md:flex-row md:h-[600px]">
         <div className="md:hidden flex flex-col items-center z-10">
           <div className="w-screen gradient-container bg-gradient-to-t from-primary to-secondary p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
@@ -60,6 +61,7 @@ const Section01 = () => {
             />
           </div>
         </div>
+      </div>
       </div>
     )
 }

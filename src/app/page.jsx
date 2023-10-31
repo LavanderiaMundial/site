@@ -12,9 +12,7 @@ export default function Home() {
   return (
     <div className="pt-5 md:pt-24">
       <Slideshow />
-      <div className="flex flex-col md:flex-row md:h-[600px]">
-        <Section01 />
-      </div>
+      <Section01 />
       <Section02 />
       <Section03 />
       <Section04 />
