@@ -4,13 +4,13 @@ import 'react-slideshow-image/dist/styles.css'
 
 const fadeImages = [
   {
-    url: './slider1.jpg'
+    url: './slider1.webp'
   },
   {
-    url: './slider2.jpg'
+    url: './slider2.webp'
   },
   {
-    url: './slider3.jpg'
+    url: './slider3.webp'
   },
 ];
 
@@ -21,7 +21,7 @@ const Slideshow = () => {
         <Fade>
           {fadeImages.map((fadeImage, index) => (
             <div key={index}>
-              <img style={{ width: '100%' }} src={fadeImage.url} />
+              <img style={{ width: '100%' }} src={fadeImage.url} alt="Lavanderia Mundial Goiânia" />
               <h2>{fadeImage.caption}</h2>
             </div>
           ))}
