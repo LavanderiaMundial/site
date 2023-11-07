@@ -1,6 +1,14 @@
 import React from "react"
 import Image from "next/image";
 import lavagemCarpete from "../../../public/lavagemCarpete.webp"
+import residencial1 from "../../../public/residencial1.jpg"
+import residencial2 from "../../../public/residencial2.jpg"
+import residencial3 from "../../../public/residencial3.jpg"
+import residencial4 from "../../../public/residencial4.jpg"
+import residencial5 from "../../../public/residencial5.jpg"
+import residencial6 from "../../../public/residencial6.jpg"
+import residencial7 from "../../../public/residencial7.jpg"
+import residencial8 from "../../../public/residencial8.jpg"
 
 const Section03 = () => {
 
@@ -21,16 +29,16 @@ const Section03 = () => {
           <div className="w-full flex mt-5 align-center justify-center">
           </div>
           <div className="w-1/4 flex">
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial1} alt="Residencial" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial2} alt="Residencial" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial3} alt="Residencial" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial4} alt="Residencial" className="rounded-xl mt-5 p-2" />
           </div>
           <div className="w-1/4 flex">
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
-            <Image src={lavagemCarpete} alt="Lavagem de Tapete" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial5} alt="Residencial" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial6} alt="Residencial" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial7} alt="Residencial" className="rounded-xl mt-5 p-2" />
+            <Image src={residencial8} alt="Residencial" className="rounded-xl mt-5 p-2" />
           </div>
           <div className="w-full flex align-center justify-center mt-5">
             <a href="https://wa.me/5562982008777" target="_blank" className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold">
