@@ -6,11 +6,12 @@ body {
   font-smoothing: antialiased;
   overflow-x: hidden;
 }
+
 html {
   overflow-x: hidden;
   @apply scroll-smooth;
 }
-/* :: Custom Scrollbar :: */
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -27,5 +28,7 @@ html {
     background: #C2DFF4;
 }
 
-overflow-x: hidden;
- 
+.imgHover:hover {
+  transform: scale(1.5);
+  transition: ease-in-out 0.3s;
+}

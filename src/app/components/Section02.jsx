@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import lavagemEstofado from "../../../public/lavagemEstofado.webp"
 import lavagemCouro from "../../../public/lavagemCouro.webp"
@@ -14,12 +14,12 @@ const Section02 = () => {
 
     const [activeDiv, setActiveDiv] = useState(0);
 
-    const Itens = ({ title, icon, text, text1 }) => {
+    const Itens = ({ title, text, text1 }) => {
         return (
             <div className="flex flex-col md:flex-row justify-center items-center md:items-start mt-5">
-                <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary mr-1">
+                {/* <div className="h-14 rounded-full radient-container bg-gradient-to-t from-primary to-secondary mr-1">
                     <FontAwesomeIcon icon={icon} className="text-light h-8 flex justify-center items-center p-3 drop-shadow-dark2" />
-                </div>
+                </div> */}
                 <div className="flex flex-col md:w-[428px] mt-5">
                     <p className="text-2xl font-bold md:px-5 text-yellow-200">
                         {title}
