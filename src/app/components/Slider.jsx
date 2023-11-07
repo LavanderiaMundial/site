@@ -4,13 +4,16 @@ import 'react-slideshow-image/dist/styles.css'
 
 const fadeImages = [
   {
-    url: './slider1.webp'
+    url: './slider1.jpg'
   },
   {
-    url: './slider2.webp'
+    url: './slider2.jpg'
   },
   {
-    url: './slider3.webp'
+    url: './slider3.jpg'
+  },
+  {
+    url: './slider4.jpg'
   },
 ];
 
