@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import lavagemEstofado from "../../../public/lavagemEstofado.webp"
 import lavagemCouro from "../../../public/lavagemCouro.webp"
 import impermeabilizacaoEstofado from "../../../public/impermeabilizacaoEstofado.webp"
-import lavagemTapete from "../../../public/lavagemTapete.webp"
+import lavagemTapete from "../../../public/lavagemTapete.jpg"
 import lavagemCarpete from "../../../public/lavagemCarpete.webp"
-import lavagemColchoes from "../../../public/lavagemColchoes.webp"
+import lavagemColchoes from "../../../public/limpezaColchao.jpg"
 
 const Section02 = () => {
 
