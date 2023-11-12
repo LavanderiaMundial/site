@@ -37,8 +37,8 @@ const Depoimentos = () => {
             <Image
               src={Depoimentos1}
               alt="Depoimentos"
-              width={600}
-              height={600}
+              width={520}
+              height={356}
             />
           </SwiperSlide>
 
@@ -46,8 +46,8 @@ const Depoimentos = () => {
             <Image
               src={Depoimentos2}
               alt="Depoimentos"
-              width={600}
-              height={600}
+              width={520}
+              height={356}
             />
           </SwiperSlide>
 
@@ -55,8 +55,8 @@ const Depoimentos = () => {
             <Image
               src={Depoimentos3}
               alt="Depoimentos"
-              width={600}
-              height={600}
+              width={520}
+              height={356}
             />
           </SwiperSlide>
 
@@ -64,8 +64,8 @@ const Depoimentos = () => {
             <Image
               src={Depoimentos4}
               alt="Depoimentos"
-              width={600}
-              height={600}
+              width={520}
+              height={356}
             />
           </SwiperSlide>
 
@@ -73,8 +73,8 @@ const Depoimentos = () => {
             <Image
               src={Depoimentos5}
               alt="Depoimentos"
-              width={600}
-              height={600}
+              width={520}
+              height={356}
             />
           </SwiperSlide>
 
@@ -82,8 +82,8 @@ const Depoimentos = () => {
             <Image
               src={Depoimentos6}
               alt="Depoimentos"
-              width={600}
-              height={600}
+              width={520}
+              height={356}
             />
           </SwiperSlide>
         </Swiper>
