@@ -18,10 +18,17 @@ const Blog = () => {
         </p>
       </div>
 
-      <div className="flex artigosBlog">
-        <div className="w-1/3 text-center p-6">
+      <div className="flex flex-col md:flex-row justify-center artigosBlog">
+        <div className="w-full md:w-1/3 text-center p-6">
           <div className="materiaBlog order-solid border-2 border-light-blue-500 rounded-lg p-3">
-            <Image src={Blog1} alt="Blog" width={670} height={450} className="rounded-lg" />
+            <Image
+              src={Blog1}
+              alt="Blog"
+              width={670}
+              height={450}
+              layout="responsive"
+              className="rounded-lg"
+            />
             <p className="text-xl font-bold py-2">
               A importância de cuidar dos estofados
             </p>
@@ -39,9 +46,16 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/3 text-center p-6">
+        <div className="w-full md:w-1/3 text-center p-6">
           <div className="materiaBlog border-solid border-2 border-light-blue-500 rounded-lg p-3">
-            <Image src={Blog2} alt="Blog" width={670} height={450} className="rounded-lg" />
+            <Image
+              src={Blog2}
+              alt="Blog"
+              width={670}
+              height={450}
+              layout="responsive"
+              className="rounded-lg"
+            />
             <p className="text-xl font-bold py-2">
               Vantagens da Impermeabilização de Estofados
             </p>
@@ -58,9 +72,16 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/3 text-center p-6">
+        <div className="w-full md:w-1/3 text-center p-6">
           <div className="materiaBlog border-solid border-2 border-light-blue-500 rounded-lg p-3">
-            <Image src={Blog3} alt="Blog" width={670} height={450} className="rounded-lg" />
+            <Image
+              src={Blog3}
+              alt="Blog"
+              width={670}
+              height={450}
+              layout="responsive"
+              className="rounded-lg"
+            />
             <p className="text-xl font-bold py-2">
               Eliminação de ácaros em estofados.
             </p>
@@ -78,9 +99,16 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/3 text-center p-6">
+        <div className="w-full md:w-1/3 text-center p-6">
           <div className="materiaBlog border-solid border-2 border-light-blue-500 rounded-lg p-3">
-            <Image src={Blog4} alt="Blog" width={670} height={450} className="rounded-lg" />
+            <Image
+              src={Blog4}
+              alt="Blog"
+              width={670}
+              height={450}
+              layout="responsive"
+              className="rounded-lg"
+            />
             <p className="text-xl font-bold py-2">
               A Importância da Impermeabilização de estofados
             </p>

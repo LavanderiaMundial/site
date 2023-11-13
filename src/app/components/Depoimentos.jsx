@@ -26,7 +26,7 @@ const Depoimentos = () => {
         </h4>
       </div>
 
-      <div className="slider">
+      <div className="slider desktop">
         <Swiper
           spaceBetween={50}
           slidesPerView={3}
@@ -87,12 +87,89 @@ const Depoimentos = () => {
             />
           </SwiperSlide>
         </Swiper>
-
-        <div className="setas pt-5 justify-center content-center align-center text-center">
-            <FontAwesomeIcon icon={faLightbulb} className="text-yellow-200" /> 
-            <span className="text-light text-sm"> Dica: Arraste para os lados para ver todos os depoimentos.</span>
-        </div>
       </div>
+
+
+
+
+
+
+
+
+      <div className="slider smartphone">
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <Image
+              src={Depoimentos1}
+              alt="Depoimentos"
+              width={520}
+              height={356}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              src={Depoimentos2}
+              alt="Depoimentos"
+              width={520}
+              height={356}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              src={Depoimentos3}
+              alt="Depoimentos"
+              width={520}
+              height={356}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              src={Depoimentos4}
+              alt="Depoimentos"
+              width={520}
+              height={356}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              src={Depoimentos5}
+              alt="Depoimentos"
+              width={520}
+              height={356}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              src={Depoimentos6}
+              alt="Depoimentos"
+              width={520}
+              height={356}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+
+
+
+      <div className="setas pt-5 justify-center content-center align-center text-center">
+        <FontAwesomeIcon icon={faLightbulb} className="text-yellow-200" />
+        <span className="text-light text-sm">
+          {" "}
+          Dica: Arraste para os lados para ver todos os depoimentos.
+        </span>
+      </div>
+
     </div>
   );
 };

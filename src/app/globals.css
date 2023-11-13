@@ -32,3 +32,40 @@ html {
   transform: scale(1.5);
   transition: ease-in-out 0.3s;
 }
+
+/* Residencial images */
+.desktopImg {
+  display: block;
+}
+
+.desktopImgSm {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .desktopImg {
+    display: none;
+  }
+  .desktopImgSm {
+    display: block;
+  }
+}
+
+/* Slider Testimonials */
+.desktop {
+  display: block;
+}
+
+.smartphone {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .desktop {
+    display: none;
+  }
+  
+  .smartphone {
+    display: block;
+  }
+}
