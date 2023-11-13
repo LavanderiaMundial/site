@@ -1,12 +1,13 @@
 "use client"
 import Slideshow from "./components/Slider";
-import Perguntas from "./components/faq";
 import Section01 from "./components/Section01";
 import Section02 from "./components/Section02";
 import Section03 from "./components/Section03";
 import Section04 from "./components/Section04";
-import Contato from "./components/Contato";
+import Perguntas from "./components/faq";
 import Depoimentos from "./components/Depoimentos";
+import Blog from "./components/Blog";
+import Contato from "./components/Contato";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Section04 />
       <Perguntas />
       <Depoimentos />
+      <Blog />
       <Contato />
     </div >
   )

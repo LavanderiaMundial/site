@@ -50,7 +50,7 @@ export default function NavBar() {
     <div className="hidden md:block">
       <div
         ref={navbarRef}
-        className="fixed z-50 backdrop-blur-lg bg-white/50 w-screen flex justify-between px-16 items-end pb-5 space-x-10"
+        className="fixed z-50 backdrop-blur-lg bg-white/50 w-screen flex justify-between px-8 items-end pb-5 space-x-10"
       >
         <Image src={logo} alt="logo da empresa" className=" w-48" />
         <div className="space-x-8 flex">
@@ -92,6 +92,7 @@ export default function NavBar() {
             title="Depoimentos"
             onClick={handleLinkClick}
           />
+          <CustomLink href="#blog" title="Blog" onClick={handleLinkClick} />
           <CustomLink
             href="#contato"
             title="Contato"
