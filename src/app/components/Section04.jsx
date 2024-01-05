@@ -17,87 +17,24 @@ const Section03 = () => {
       </p>
       <div className="flex flex-col md:flex-row justify-center items-center gap-5">
         <div className="md:w-1/2 flex flex-col md:flex-row md:flex-wrap justify-between">
-          <div className="md:w-1/2 p-5">
+          <div className="p-5">
             <Image
               src={mocoComercial}
               alt="Imagem 1"
               className="rounded-xl mt-5 imgHover"
             />
           </div>
-          <div className="md:w-1/2 p-5">
+          <div className="p-5">
             <Image
               src={Comercial}
               alt="Imagem 2"
               className="rounded-xl mt-5 imgHover"
             />
           </div>
-          <div className="md:w-1/2 p-5">
+          <div className="p-5">
             <Image
               src={mocoComercial}
               alt="Imagem 3"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={Comercial}
-              alt="Imagem 4"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={mocoComercial}
-              alt="Imagem 1"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={Comercial}
-              alt="Imagem 2"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={mocoComercial}
-              alt="Imagem 3"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={Comercial}
-              alt="Imagem 4"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={mocoComercial}
-              alt="Imagem 1"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={Comercial}
-              alt="Imagem 2"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={mocoComercial}
-              alt="Imagem 3"
-              className="rounded-xl mt-5 imgHover"
-            />
-          </div>
-          <div className="md:w-1/2 p-5">
-            <Image
-              src={Comercial}
-              alt="Imagem 4"
               className="rounded-xl mt-5 imgHover"
             />
           </div>
