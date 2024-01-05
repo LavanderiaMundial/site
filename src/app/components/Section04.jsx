@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import mocoComercial from "../../../public/mocoComercial.webp";
 import Comercial from "../../../public/comercial.jpg";
+import Comercial1 from "../../../public/comercial1.jpg";
 
 const Section03 = () => {
   return (
@@ -33,7 +34,7 @@ const Section03 = () => {
           </div>
           <div className="p-5">
             <Image
-              src={mocoComercial}
+              src={Comercial1}
               alt="Imagem 3"
               className="rounded-xl mt-5 imgHover"
             />
