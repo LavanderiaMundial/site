@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Slideshow from "./components/Slider";
 import Section01 from "./components/Section01";
 import Section02 from "./components/Section02";
@@ -10,7 +10,6 @@ import Blog from "./components/Blog";
 import Contato from "./components/Contato";
 
 export default function Home() {
-
   return (
     <div className="pt-5 md:pt-24">
       <Slideshow />
@@ -22,6 +21,6 @@ export default function Home() {
       <Depoimentos />
       <Blog />
       <Contato />
-    </div >
-  )
+    </div>
+  );
 }
