@@ -60,7 +60,7 @@ const Blog = () => {
               <p className="pt-2 pb-6">{blog.texto}</p>
               <div className="button pb-4">
                 <Link
-                  href={`/artigos/${blog.id}`}
+                  href={`/`}
                   className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold"
                 >
                   Ver artigo
