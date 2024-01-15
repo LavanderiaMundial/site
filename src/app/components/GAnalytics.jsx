@@ -16,4 +16,6 @@ const GAnalytics = () => (
       }}
     />
   </>
-);
+)
+
+export default GAnalytics
