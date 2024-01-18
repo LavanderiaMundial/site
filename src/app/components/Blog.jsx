@@ -67,7 +67,7 @@ const Blog = () => {
                   href={blog.href}
                   className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold"
                 >
-                  Ver artigo
+                  Ver mais
                 </Link>
               </div>
             </div>
