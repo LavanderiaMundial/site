@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Blog1 from "../../../../public/blog1.webp";
 import Link from "next/link";
+import Script from "next/script";
 
 const Artigo1 = () => {
   return (
     <main>
-      <div class="flex justify-center mt-20 bg-white">
-        <div class="container mx-auto my-4 px-4 lg:px-20">
-          <div class="w-full p-8 my-4 md:px-12 lg:pl-20 mr-auto rounded-2xl shadow-2xl">
+      <div className="flex justify-center mt-20 bg-white">
+        <div className="container mx-auto my-4 px-4 lg:px-20">
+          <div className="w-full p-8 my-4 md:px-12 lg:pl-20 mr-auto rounded-2xl shadow-2xl">
             <div className="lg:flex">
               <div className="left">
                 <Image
@@ -89,6 +90,29 @@ const Artigo1 = () => {
             >
               solicite seu orçamento
             </Link>
+
+            <div id="disqus_thread"></div>
+            <script>
+              {`
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;
+                this.page.identifier = PAGE_IDENTIFIER;
+                };
+
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://mundial-lavanderia.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+              `}
+            </script>
+            <noscript>
+              Please enable JavaScript to view the{" "}
+              <a href="https://disqus.com/?ref_noscript">
+                comments powered by Disqus.
+              </a>
+            </noscript>
           </div>
         </div>
       </div>
