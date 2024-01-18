@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Blog2 from "/public/Blog2.webp";
+import Blog2 from "../../../../public/blog2.webp";
 import Link from "next/link";
 
 const Artigo2 = () => {
