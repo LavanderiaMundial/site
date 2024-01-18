@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../../../public/logo-principal.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const CustomLink = ({ href, title, className = "", onClick }) => {
   const handleClick = (e) => {
@@ -52,7 +53,11 @@ export default function NavBar() {
         ref={navbarRef}
         className="fixed z-50 backdrop-blur-lg bg-white/50 w-screen flex justify-between px-8 items-end pb-5 space-x-10"
       >
-        <Image src={logo} alt="logo da empresa" className=" w-48" />
+       
+        <Link href="/">
+          <Image src={logo} alt="logo da empresa" className=" w-48" />
+        </Link>
+
         <div className="space-x-8 flex">
           <CustomLink
             href="#servicos"

@@ -167,11 +167,10 @@ const Section03 = () => {
 
           <div className="w-full flex align-center justify-center mt-5">
             <a
-              href="https://wa.me/5562982008777"
-              target="_blank"
+              href="/Form"
               className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold"
             >
-              Agendar agora
+              solicite seu orçamento
             </a>
           </div>
         </div>

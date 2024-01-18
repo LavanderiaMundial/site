@@ -44,13 +44,12 @@ const Section01 = () => {
           </p>
 
           <div className="w-full flex mt-5 mb-10">
-            <a
-              href="https://wa.me/5562982008777"
-              target="_blank"
+            <Link
+              href="/Form"
               className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold"
             >
-              Agendar agora
-            </a>
+              Solicite seu orçamento
+            </Link>
           </div>
         </div>
         <div className="hidden md:flex flex-col items-center md:w-1/2 md:-mt-28 z-10">

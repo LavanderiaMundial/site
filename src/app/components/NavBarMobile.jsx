@@ -11,6 +11,7 @@ import logo from "../../../public/logo-principal.webp";
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function NavMobile() {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -18,11 +19,9 @@ export default function NavMobile() {
     <div className="flex justify-around md:hidden mt-5">
       <div className=" flex justify-around items-center py-1 w-screen">
         <div className="flex justify-center items-center">
-          <Image
-            src={logo}
-            alt="logo da Fazenda Santo Antônio"
-            className="w-36"
-          />
+          <Link href="/">
+            <Image src={logo} alt="Lavanderia Mundial" className="w-36" />
+          </Link>
         </div>
         <svg
           onClick={() => setShowSidebar(!showSidebar)}

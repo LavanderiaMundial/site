@@ -4,17 +4,11 @@ import Link from "next/link";
 
 export const ArtigosdoBlog = [
   {
-    id: 1,
-    image: '/blog1.webp',
-    title: "A importância de cuidar dos estofados",
-    texto:
-      "Saiba o por que é tão importante realizar uma higienização dos estofados com frequência.",
-  },
-  {
-    id: 2,
-    image: '/blog2.webp',
-    title: "Vantagens da Impermeabilização de Estofados",
-    texto: "Confira nesse texto as vantagens de impermeabilizar seu estofado.",
+    id: 4,
+    image: '/blog4.jpg',
+    title: "O poder dos sofás coloridos na decoração das salas",
+    texto: "Como transformar o ambiente com personalidade e estilo.",
+    href: '/Blog/Artigo4',
   },
   {
     id: 3,
@@ -22,12 +16,22 @@ export const ArtigosdoBlog = [
     title: "Eliminação de ácaros em estofados",
     texto:
       "A higienização ajuda na eliminação de ácaros e outros micro organismos como fungos e bactérias.",
+    href: '/Blog/Artigo3',
   },
   {
-    id: 4,
-    image: '/blog4.webp',
-    title: "A Importância da Impermeabilização de estofados",
-    texto: "Mantenha seu ambiente agradável e limpo em todo o tempo.",
+    id: 2,
+    image: '/blog2.webp',
+    title: "Vantagens da Impermeabilização de Estofados",
+    texto: "Confira nesse texto as vantagens de impermeabilizar seu estofado.",
+    href: '/Blog/Artigo2',
+  },
+  {
+    id: 1,
+    image: '/blog1.webp',
+    title: "A importância de cuidar dos estofados",
+    texto:
+      "Saiba o por que é tão importante realizar uma higienização dos estofados com frequência.",
+    href: '/Blog/Artigo1',
   },
 ];
 
@@ -60,7 +64,7 @@ const Blog = () => {
               <p className="pt-2 pb-6">{blog.texto}</p>
               <div className="button pb-4">
                 <Link
-                  href={`/`}
+                  href={blog.href}
                   className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold"
                 >
                   Ver artigo
