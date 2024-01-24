@@ -89,13 +89,6 @@ const Depoimentos = () => {
         </Swiper>
       </div>
 
-
-
-
-
-
-
-
       <div className="slider smartphone">
         <Swiper
           spaceBetween={50}
