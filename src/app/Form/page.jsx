@@ -31,7 +31,7 @@ const Formulario = () => {
 
   const enviarDadosParaAPI = async (data) => {
     try {
-      const response = await axios.post('/api/email.jsx', data);
+      const response = await axios.post('/api/send-email', data);
       return response;
     } catch (error) {
       throw error;
