@@ -1,5 +1,51 @@
 "use client";
+import React, { useState } from "react";
+
 const Formulario = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    whatsapp: "",
+  });
+
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const response = await fetch("api/contact-us", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    console.log('Response:', response);
+    const { success, error } = await response.json();
+
+    if (success) {
+      alert("Your inquiry has been submitted!");
+    } else if (error) {
+      console.error(error);
+      alert("Error while submitting your inquiry: ", error);
+    }
+
+    setSubmitting(false);
+  };
+
   return (
     <main>
       <div className="flex justify-center items-center w-screen h-screen bg-white">
@@ -11,40 +57,43 @@ const Formulario = () => {
               </h1>
             </div>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                 <input
                   type="text"
-                  name="nome"
-                  value="nome"
+                  id="firstName"
+                  name="firstName"
                   placeholder="Nome*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  onChange={handleInputChange}
                 />
 
                 <input
                   type="text"
-                  name="sobrenome"
-                  value="sobrenome"
+                  id="lastName"
+                  name="lastName"
                   placeholder="Sobrenome*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  onChange={handleInputChange}
                 />
 
                 <input
                   type="email"
+                  id="email"
                   name="email"
-                  value="email"
                   placeholder="E-mail*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  onChange={handleInputChange}
                 />
 
                 <input
                   type="number"
+                  id="whatsapp"
                   name="whatsapp"
-                  value="whatsapp"
                   placeholder="WhatsApp (apenas números)*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  onChange={handleInputChange}
                 />
-
               </div>
 
               <div className="my-6 w-1/2 lg:w-1/4">
