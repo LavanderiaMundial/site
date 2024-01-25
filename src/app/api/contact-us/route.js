@@ -8,9 +8,9 @@ import path from 'path';
 export async function POST(request) {
     const data = await request.json();
 
-    const htmlFilePath = path.join(process.cwd(), 'emails', 'contact-form.html');
+    const htmlFilePath = path.join(process.cwd(), 'src', 'app','emails', 'contact-form.html');
     console.log(htmlFilePath);
-    
+
     let htmlContent = fs.readFileSync(htmlFilePath, 'utf8', (err, htmlContent) => {
         if (err) {
             console.error('Error reading HTML file: ', err);
@@ -24,7 +24,7 @@ export async function POST(request) {
     try {
         await transporter.sendMail({
            ...mailOptions,
-           subject: `New Contact Form Inquiry`,
+           subject: `[Nova mensagem do Site]`,
            text: plainTextContent,
            html: htmlContent,
         });

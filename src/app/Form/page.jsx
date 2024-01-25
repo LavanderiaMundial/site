@@ -37,10 +37,10 @@ const Formulario = () => {
     const { success, error } = await response.json();
 
     if (success) {
-      alert("Your inquiry has been submitted!");
+      alert("Sua mensagem foi enviada com sucesso!");
     } else if (error) {
       console.error(error);
-      alert("Error while submitting your inquiry: ", error);
+      alert("Houve um erro no envio de sua mensagem: ", error);
     }
 
     setSubmitting(false);
