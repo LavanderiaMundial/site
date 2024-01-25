@@ -1,43 +1,5 @@
 "use client";
-import { useState } from "react";
-import axios from 'axios';
-
 const Formulario = () => {
-  const [formData, setFormData] = useState({
-    nome: '',
-    sobrenome: '',
-    email: '',
-    whatsapp: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await enviarDadosParaAPI(formData);
-      console.log(response.data);
-    } catch (error) {
-      console.log('Erro ao enviar dados para o backend:', error.message);
-    }
-  };
-
-  const enviarDadosParaAPI = async (data) => {
-    try {
-      const response = await axios.post('../api/sendEmail', data);
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
-
   return (
     <main>
       <div className="flex justify-center items-center w-screen h-screen bg-white">
@@ -49,13 +11,12 @@ const Formulario = () => {
               </h1>
             </div>
 
-            <form onSubmit={handleSubmit}>
+            <form>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                 <input
                   type="text"
                   name="nome"
-                  value={formData.nome}
-                  onChange={handleChange}
+                  value="nome"
                   placeholder="Nome*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 />
@@ -63,8 +24,7 @@ const Formulario = () => {
                 <input
                   type="text"
                   name="sobrenome"
-                  value={formData.sobrenome}
-                  onChange={handleChange}
+                  value="sobrenome"
                   placeholder="Sobrenome*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 />
@@ -72,8 +32,7 @@ const Formulario = () => {
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  value="email"
                   placeholder="E-mail*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 />
@@ -81,8 +40,7 @@ const Formulario = () => {
                 <input
                   type="number"
                   name="whatsapp"
-                  value={formData.whatsapp}
-                  onChange={handleChange}
+                  value="whatsapp"
                   placeholder="WhatsApp (apenas números)*"
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 />
