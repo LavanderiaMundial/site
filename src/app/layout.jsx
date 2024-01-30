@@ -6,6 +6,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import GAnalytics from "./components/GAnalytics";
+import GAds from "../components/GAds";
+import GTag from "../components/GTag";
 import WhatsApp from "./components/WhatsApp";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,6 +28,8 @@ export default function RootLayout({ children }) {
         {children}
         <Analytics />
         <GAnalytics />
+        <GAds />
+        <GTag />
         <WhatsApp />
         <Footer />
       </body>
