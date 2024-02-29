@@ -7,7 +7,7 @@ export default function WhatsApp() {
   return (
     <div>
       <Link
-        href="https://wa.me/5562982008777?text=Quero%20saber%20mais"
+        href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações"
         className="WhatsApp"
         target="_blank"
       >
