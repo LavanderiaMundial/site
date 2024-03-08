@@ -55,9 +55,9 @@ export default function RootLayout({ children }) {
         <NavMobile />
         {children}
         <Analytics />
-        <GAnalytics />
+        {/* <GAnalytics />
         <GAds />
-        <GTag />
+        <GTag /> */}
         <WhatsApp />
         <Footer />
       </body>
