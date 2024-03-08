@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import BackToTop from "./components/BackToTop";
 import NavBar from "./components/NavBar";
 import NavMobile from "./components/NavBarMobile";
@@ -22,9 +23,10 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <meta name="p:domain_verify" content="2c0d52876cc1ebd6ac09b2b35053d4ba" />
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
         <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -32,8 +34,9 @@ export default function RootLayout({ children }) {
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-P7JLH4K8');</script>
       <!-- End Google Tag Manager -->`,
-        }}
-      />
+          }}
+        />
+      </Head>
 
       <body id="inicio" className="">
 
