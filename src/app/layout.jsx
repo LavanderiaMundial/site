@@ -1,4 +1,6 @@
-import Head from 'next/head';
+import { GoogleTagManager } from '@next/third-parties/google'
+
+// import Head from 'next/head';
 import BackToTop from "./components/BackToTop";
 import NavBar from "./components/NavBar";
 import NavMobile from "./components/NavBarMobile";
@@ -23,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <meta name="p:domain_verify" content="2c0d52876cc1ebd6ac09b2b35053d4ba" />
 
-      <Head>
+      {/* <Head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -36,11 +38,11 @@ export default function RootLayout({ children }) {
       <!-- End Google Tag Manager -->`,
           }}
         />
-      </Head>
+      </Head> */}
 
       <body id="inicio" className="">
 
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
           <!-- Google Tag Manager (noscript) -->
@@ -48,7 +50,7 @@ export default function RootLayout({ children }) {
           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!-- End Google Tag Manager (noscript) -->`,
           }}
-        />
+        /> */}
 
         <BackToTop />
         <NavBar />
@@ -60,6 +62,7 @@ export default function RootLayout({ children }) {
         <GTag /> */}
         <WhatsApp />
         <Footer />
+        <GoogleTagManager gtmId="GTM-P7JLH4K8" />
       </body>
     </html>
   );
