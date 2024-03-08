@@ -5,9 +5,9 @@ import Footer from "./components/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import GAnalytics from "./components/GAnalytics";
-import GAds from "./components/GAds";
-import GTag from "./components/GTag";
+// import GAnalytics from "./components/GAnalytics";
+// import GAds from "./components/GAds";
+// import GTag from "./components/GTag";
 import WhatsApp from "./components/WhatsApp";
 
 const inter = Inter({ subsets: ["latin"] });
