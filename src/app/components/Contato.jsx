@@ -26,7 +26,7 @@ const Contato = () => {
                             <Link href="https://facebook.com/mundial.lavanderia" target="_blank">
                                 <FontAwesomeIcon icon={faFacebook} className="text-light h-10" />
                             </Link>
-                            <Link href="https://wa.me/5562982008777" target="_blank">
+                            <Link href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações" target="_blank">
                                 <FontAwesomeIcon icon={faWhatsapp} className="text-light h-10" />
                             </Link>
                         </div>

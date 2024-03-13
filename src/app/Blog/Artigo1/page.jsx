@@ -84,7 +84,7 @@ const Artigo1 = () => {
 
             <Link
               className="uppercase gradient-container bg-gradient-to-t from-primary to-secondary text-light py-2 px-5 rounded-3xl hover:text-amarelo transition-all duration-300 font-bold"
-              href="https://wa.me/5562982008777"
+              href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações"
               target="_blank"
             >
               solicite seu orçamento

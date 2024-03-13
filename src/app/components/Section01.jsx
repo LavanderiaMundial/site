@@ -16,7 +16,7 @@ const Section01 = () => {
               Solicite seu orçamento sem compromisso!
             </p>
             <Link
-              href="https://wa.me/5562982008777"
+              href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações"
               target="_blank"
               className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center transition-all duration-300 "
             >
@@ -61,7 +61,7 @@ const Section01 = () => {
               Solicite seu orçamento sem compromisso
             </p>
             <Link
-              href="https://wa.me/5562982008777"
+              href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações"
               target="_blank"
               className="font-bold text-primary bg-light px-5 py-2 rounded-xl flex justify-center items-center transition-all duration-30 hover:text-amarelo duration-300"
             >
