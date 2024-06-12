@@ -1,6 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 const Formulario = () => {
   const [formData, setFormData] = useState({
@@ -11,16 +10,10 @@ const Formulario = () => {
   });
 
   const [submitting, setSubmitting] = useState(false);
-  const [isClient, setIsClient] = useState(false); // State to check if client
-
-  useEffect(() => {
-    setIsClient(true); // Set to true when the component is mounted on the client-side
-  }, []);
-
-  const router = useRouter();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
     setFormData({
       ...formData,
       [name]: value,
@@ -31,30 +24,23 @@ const Formulario = () => {
     e.preventDefault();
     setSubmitting(true);
 
-    try {
-      const response = await fetch("/api/contact-us", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    const response = await fetch("api/contact-us", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-      const { success, error } = await response.json();
+    console.log("Response:", response);
+    const { success, error } = await response.json();
 
-      if (success) {
-        alert("Sua mensagem foi enviada com sucesso!");
-        if (isClient) {
-          router.push("/"); // Redirect to home page
-        }
-      } else if (error) {
-        console.error(error);
-        alert("Houve um erro no envio de sua mensagem: ", error);
-      }
-    } catch (error) {
-      console.error("Erro ao enviar o formulário:", error);
-      alert("Ocorreu um erro inesperado. Por favor, tente novamente.");
+    if (success) {
+      alert("Sua mensagem foi enviada com sucesso!");
+    } else if (error) {
+      console.error(error);
+      alert("Houve um erro no envio de sua mensagem: ", error);
     }
 
     setSubmitting(false);
@@ -119,9 +105,8 @@ const Formulario = () => {
                   type="submit"
                   className="uppercase text-sm font-bold tracking-wide bg-blue-600 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
-                  disabled={submitting}
                 >
-                  {submitting ? "Enviando..." : "Solicitar orçamento"}
+                  Solicitar orçamento
                 </button>
               </div>
             </form>
