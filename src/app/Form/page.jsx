@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-const router = useRouter();
 
 const Formulario = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +11,8 @@ const Formulario = () => {
   });
 
   const [submitting, setSubmitting] = useState(false);
+
+  const router = useRouter();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
