@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
+const router = useRouter();
 
 const Formulario = () => {
   const [formData, setFormData] = useState({
@@ -33,11 +35,12 @@ const Formulario = () => {
       body: JSON.stringify(formData),
     });
 
-    console.log('Response:', response);
+    console.log("Response:", response);
     const { success, error } = await response.json();
 
     if (success) {
       alert("Sua mensagem foi enviada com sucesso!");
+      router.push("/");
     } else if (error) {
       console.error(error);
       alert("Houve um erro no envio de sua mensagem: ", error);
