@@ -53,7 +53,6 @@ export default function NavBar() {
         ref={navbarRef}
         className="fixed z-50 backdrop-blur-lg bg-white/50 w-screen flex justify-between px-8 items-end pb-5 space-x-10"
       >
-       
         <Link href="/">
           <Image src={logo} alt="logo da empresa" className=" w-48" />
         </Link>

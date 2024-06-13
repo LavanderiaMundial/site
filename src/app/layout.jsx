@@ -1,4 +1,5 @@
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import BackToTop from "./components/BackToTop";
 import NavBar from "./components/NavBar";
 import NavMobile from "./components/NavBarMobile";
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <meta name="p:domain_verify" content="2c0d52876cc1ebd6ac09b2b35053d4ba" />
-      <meta name="google-site-verification" content="V3D1sMO1XM7vQMh1gI8dkZRCW11kRMNy1DhAJ7Be_hc" />
+      <meta
+        name="google-site-verification"
+        content="V3D1sMO1XM7vQMh1gI8dkZRCW11kRMNy1DhAJ7Be_hc"
+      />
       <body id="inicio" className="">
         <BackToTop />
         <NavBar />
