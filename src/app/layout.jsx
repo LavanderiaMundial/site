@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         <NavMobile />
         {children}
+        <SpeedInsights />
         <Analytics />
         <WhatsApp />
         <Footer />
