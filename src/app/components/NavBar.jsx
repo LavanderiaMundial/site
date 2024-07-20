@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../../../public/logo-principal.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 const CustomLink = ({ href, title, className = "", onClick }) => {
@@ -58,6 +59,15 @@ export default function NavBar() {
         </Link>
 
         <div className="space-x-8 flex">
+          <Link
+            href="https://wa.me/5562982008777"
+            target="_blank"
+            className="text-primary font-bold"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} className="font-bold" /> (62)
+            98200-8777
+          </Link>
+
           <CustomLink
             href="#servicos"
             title="Serviços"
