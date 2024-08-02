@@ -59,15 +59,24 @@ export default function NavBar() {
         </Link>
 
         <div className="space-x-8 flex">
-          <Link
+          {/* <FontAwesomeIcon
+            icon={faWhatsapp}
+            size="xs"
+            className="font-bold text-primary"
+          /> */}
+          <span className="font-bold text-primary">
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              className="font-bold text-primary"
+            />{" "}
+            &nbsp;(62) 98200-8777
+          </span>
+          {/* <Link
             href="https://wa.me/5562982008777"
             target="_blank"
             className="text-primary font-bold"
-          >
-            <FontAwesomeIcon icon={faWhatsapp} className="font-bold" /> (62)
-            98200-8777
-          </Link>
-
+          > */}
+          {/* </Link> */}
           <CustomLink
             href="#servicos"
             title="Serviços"
