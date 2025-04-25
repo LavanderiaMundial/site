@@ -35,7 +35,7 @@ const Contato = () => {
                 <div className="md:w-1/2 flex flex-col justify-center items-center gap-5 smartphone">
                     <div
                         className="-z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-xl h-96">
-                        <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</h2>
+                        <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> Rua 18, Quadra 51, Lote 18, Jardim Santo Antônio, Goiânia - GO, 74853-310</h2>
                         <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
                         <div className="space-x-5">
                             <Link href="#" target="_blank" className="">
