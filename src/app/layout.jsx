@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       />
       <body id="inicio" className="">
         <BackToTop />
-        <NavBar />
+        <NavBar /> 
         <NavMobile />
         {children}
         <SpeedInsights />

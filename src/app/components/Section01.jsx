@@ -10,10 +10,10 @@ const Section01 = () => {
         <div className="md:hidden flex flex-col items-center z-10">
           <div className="w-screen gradient-container bg-gradient-to-t from-primary to-secondary p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
             <h2 className="text-2xl text-yellow-200 font-bold text-center">
-              Especialistas em Limpeza de estofados.
+              Serviço especializado em limpeza de tapetes e estofados, com qualidade garantida.
             </h2>
             <p className="text-lg my-5  text-center mt-8 text-light ">
-              Solicite seu orçamento sem compromisso!
+              Solicite seu orçamento conosco, sem compromisso!
             </p>
             <Link
               href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações"
@@ -54,11 +54,11 @@ const Section01 = () => {
         </div>
         <div className="hidden md:flex flex-col items-center md:w-1/2 md:-mt-28 z-10">
           <div className="w-80 h-80 gradient-container bg-gradient-to-t from-primary to-secondary rounded-xl p-5 shadow-lg shadow-black/75 flex flex-col justify-center items-center">
-            <h2 className="text-3xl text-yellow-200 font-bold text-center">
-              Especialistas em limpeza de estofados
+            <h2 className="text-2xl text-yellow-200 font-bold text-center">
+              Serviço especializado em limpeza de tapetes e estofados, com qualidade garantida.
             </h2>
             <p className="text-lg my-5 text-center mt-3 text-light ">
-              Solicite seu orçamento sem compromisso
+              Solicite seu orçamento conosco, sem compromisso!
             </p>
             <Link
               href="https://wa.me/5562982008777?text=Visitei%20seu%20site%20gostaria%20de%20mais%20informações"

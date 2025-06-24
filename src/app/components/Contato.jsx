@@ -17,7 +17,7 @@ const Contato = () => {
                 </div>
                 <div className="w-1/2 flex flex-col justify-center items-center gap-5 z-10 desktop">
                     <motion.div initial={{ x: -400 }} whileInView={{ x: 0 }} transition={{ duration: 1, delay: 0.5 }} exit={{ x: -400 }} className="hidden -z-10 md:flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-e-xl h-96">
-                        <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> <span className="text-yellow-200 font-bold">R. Colômbia, Quadra 14 - lote 20 - Vila Maria Luiza, Goiânia - GO, 74720-190</span></h2>
+                        <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> <span className="text-yellow-200 font-bold"> Rua 18, Quadra 51, Lote 18 - Jardim Santo Antônio - Goiânia - GO, 74853-310</span></h2>
                         <h2><span className="text-light font-bold">E-mail:</span> <span className="text-yellow-200 font-bold">lavanderiamundial.mkt@gmail.com</span></h2>
                         <div className="space-x-5">
                             <Link href="https://instagram.com/lavanderia_mundial" target="_blank" className="">
@@ -35,7 +35,7 @@ const Contato = () => {
                 <div className="md:w-1/2 flex flex-col justify-center items-center gap-5 smartphone">
                     <div
                         className="-z-10 flex flex-col justify-center items-center text-center gap-5 bg-gradient-to-t from-primary to-secondary rounded-xl h-96">
-                        <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> Rua 18, Quadra 51, Lote 18, Jardim Santo Antônio, Goiânia - GO, 74853-310</h2>
+                        <h2 className="text-xl px-5"><span className="text-light font-bold">Endereço:</span> Rua 18, Quadra 51, Lote 18 - Jardim Santo Antônio - Goiânia - GO, 74853-310</h2>
                         <h2><span className="text-light font-bold">E-mail:</span> contato@lavanderiamundial.com.br</h2>
                         <div className="space-x-5">
                             <Link href="#" target="_blank" className="">
